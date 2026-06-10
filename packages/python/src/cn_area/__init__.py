@@ -152,3 +152,22 @@ def flatten() -> list[AreaRecord]:
                     district_type=dist["type"],
                 ))
     return result
+
+
+def search(name: str) -> list[AreaRecord]:
+    """按地区名称反查（精确匹配优先，模糊匹配兜底）"""
+    if not name:
+        return []
+    all_records = flatten()
+    exact = [
+        r for r in all_records
+        if r.province_name == name or r.city_name == name or r.district_name == name
+    ]
+    if exact:
+        return exact
+    return [
+        r for r in all_records
+        if name in r.province_name
+        or (r.city_name and name in r.city_name)
+        or (r.district_name and name in r.district_name)
+    ]

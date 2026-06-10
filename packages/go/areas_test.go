@@ -62,3 +62,33 @@ func TestDistrictsHohhot(t *testing.T) {
 		t.Fatal("Districts('1501') is empty")
 	}
 }
+
+func TestSearchExact(t *testing.T) {
+	r := Search("东城区")
+	if len(r) == 0 {
+		t.Fatal("Search('东城区') is empty")
+	}
+	if r[0].DistrictName != "东城区" {
+		t.Errorf("DistrictName = %q, want %q", r[0].DistrictName, "东城区")
+	}
+}
+
+func TestSearchMultiple(t *testing.T) {
+	r := Search("朝阳区")
+	if len(r) <= 1 {
+		t.Errorf("Search('朝阳区') = %d items, want > 1", len(r))
+	}
+}
+
+func TestSearchEmpty(t *testing.T) {
+	if got := Search(""); len(got) != 0 {
+		t.Errorf("Search('') = %d items, want 0", len(got))
+	}
+}
+
+func TestSearchFuzzy(t *testing.T) {
+	r := Search("朝阳")
+	if len(r) == 0 {
+		t.Fatal("Search('朝阳') is empty")
+	}
+}

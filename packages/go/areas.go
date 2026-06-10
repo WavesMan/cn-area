@@ -177,3 +177,40 @@ func Flatten() []Record {
 	}
 	return result
 }
+
+// Search 按地区名称反查（精确匹配优先，模糊匹配兜底）
+func Search(name string) []Record {
+	if name == "" {
+		return nil
+	}
+	all := Flatten()
+	var exact []Record
+	for _, r := range all {
+		if r.ProvinceName == name || r.CityName == name || r.DistrictName == name {
+			exact = append(exact, r)
+		}
+	}
+	if len(exact) > 0 {
+		return exact
+	}
+	var fuzzy []Record
+	for _, r := range all {
+		if contains(r.ProvinceName, name) || contains(r.CityName, name) || contains(r.DistrictName, name) {
+			fuzzy = append(fuzzy, r)
+		}
+	}
+	return fuzzy
+}
+
+func contains(s, substr string) bool {
+	return len(s) >= len(substr) && (s == substr || len(s) > 0 && len(substr) > 0 && findSubstring(s, substr))
+}
+
+func findSubstring(s, substr string) bool {
+	for i := 0; i <= len(s)-len(substr); i++ {
+		if s[i:i+len(substr)] == substr {
+			return true
+		}
+	}
+	return false
+}

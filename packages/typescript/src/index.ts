@@ -105,6 +105,25 @@ export function lookup(code: string): AreaRecord | undefined {
   return undefined;
 }
 
+/** 按地区名称反查（精确匹配优先，模糊匹配兜底） */
+export function search(name: string): AreaRecord[] {
+  if (!name) return [];
+  const all = flatten();
+  const exact = all.filter(
+    (r) =>
+      r.provinceName === name ||
+      r.cityName === name ||
+      r.districtName === name
+  );
+  if (exact.length > 0) return exact;
+  return all.filter(
+    (r) =>
+      r.provinceName.includes(name) ||
+      r.cityName?.includes(name) ||
+      r.districtName?.includes(name)
+  );
+}
+
 /** 返回全部扁平记录 */
 export function flatten(): AreaRecord[] {
   const result: AreaRecord[] = [];

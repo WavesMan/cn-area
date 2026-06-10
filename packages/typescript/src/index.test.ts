@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { provinces, cities, districts, lookup, flatten } from "./index.js";
+import { provinces, cities, districts, lookup, flatten, search } from "./index.js";
 
 describe("cn-area", () => {
   it("provinces() returns 34 items", () => {
@@ -38,5 +38,25 @@ describe("cn-area", () => {
   it("districts('1501') returns Hohhot districts", () => {
     const d = districts("1501");
     assert.ok(d.length > 0);
+  });
+
+  it("search('东城区') returns exact match", () => {
+    const r = search("东城区");
+    assert.ok(r.length > 0);
+    assert.strictEqual(r[0].districtName, "东城区");
+  });
+
+  it("search('朝阳区') returns multiple matches", () => {
+    const r = search("朝阳区");
+    assert.ok(r.length > 1);
+  });
+
+  it("search('') returns empty", () => {
+    assert.strictEqual(search("").length, 0);
+  });
+
+  it("search('朝阳') fuzzy matches", () => {
+    const r = search("朝阳");
+    assert.ok(r.length > 0);
   });
 });

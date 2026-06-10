@@ -1,4 +1,4 @@
-from cn_area import provinces, cities, districts, lookup, flatten
+from cn_area import provinces, cities, districts, lookup, flatten, search
 
 
 def test_provinces_count():
@@ -37,3 +37,23 @@ def test_cities_beijing_empty():
 def test_districts_hohhot():
     d = districts("1501")
     assert len(d) > 0
+
+
+def test_search_exact():
+    r = search("东城区")
+    assert len(r) > 0
+    assert r[0].district_name == "东城区"
+
+
+def test_search_multiple():
+    r = search("朝阳区")
+    assert len(r) > 1
+
+
+def test_search_empty():
+    assert len(search("")) == 0
+
+
+def test_search_fuzzy():
+    r = search("朝阳")
+    assert len(r) > 0
