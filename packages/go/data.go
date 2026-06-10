@@ -39,7 +39,7 @@ var areas = []Province{
 		{Code: "120119", Name: "蓟州区", Type: "市辖区"},
 	}},
 	{Code: "13", Name: "河北省", Type: "省", Cities: []City{
-		{Code: "1301", Name: "石家庄市", Type: "地级市", Cities: []City{
+		{Code: "1301", Name: "石家庄市", Type: "地级市", Districts: []District{
 			{Code: "130102", Name: "长安区", Type: "市辖区"},
 			{Code: "130104", Name: "桥西区", Type: "市辖区"},
 			{Code: "130105", Name: "新华区", Type: "市辖区"},
@@ -63,7 +63,7 @@ var areas = []Province{
 			{Code: "130183", Name: "晋州市", Type: "县级市"},
 			{Code: "130184", Name: "新乐市", Type: "县级市"},
 		}},
-		{Code: "1302", Name: "唐山市", Type: "地级市", Cities: []City{
+		{Code: "1302", Name: "唐山市", Type: "地级市", Districts: []District{
 			{Code: "130202", Name: "路南区", Type: "市辖区"},
 			{Code: "130203", Name: "路北区", Type: "市辖区"},
 			{Code: "130204", Name: "古冶区", Type: "市辖区"},
@@ -79,7 +79,7 @@ var areas = []Province{
 			{Code: "130283", Name: "迁安市", Type: "县级市"},
 			{Code: "130284", Name: "滦州市", Type: "县级市"},
 		}},
-		{Code: "1303", Name: "秦皇岛市", Type: "地级市", Cities: []City{
+		{Code: "1303", Name: "秦皇岛市", Type: "地级市", Districts: []District{
 			{Code: "130302", Name: "海港区", Type: "市辖区"},
 			{Code: "130303", Name: "山海关区", Type: "市辖区"},
 			{Code: "130304", Name: "北戴河区", Type: "市辖区"},
@@ -88,7 +88,7 @@ var areas = []Province{
 			{Code: "130322", Name: "昌黎县", Type: "县"},
 			{Code: "130324", Name: "卢龙县", Type: "县"},
 		}},
-		{Code: "1304", Name: "邯郸市", Type: "地级市", Cities: []City{
+		{Code: "1304", Name: "邯郸市", Type: "地级市", Districts: []District{
 			{Code: "130402", Name: "邯山区", Type: "市辖区"},
 			{Code: "130403", Name: "丛台区", Type: "市辖区"},
 			{Code: "130404", Name: "复兴区", Type: "市辖区"},
@@ -108,7 +108,7 @@ var areas = []Province{
 			{Code: "130435", Name: "曲周县", Type: "县"},
 			{Code: "130481", Name: "武安市", Type: "县级市"},
 		}},
-		{Code: "1305", Name: "邢台市", Type: "地级市", Cities: []City{
+		{Code: "1305", Name: "邢台市", Type: "地级市", Districts: []District{
 			{Code: "130502", Name: "襄都区", Type: "市辖区"},
 			{Code: "130503", Name: "信都区", Type: "市辖区"},
 			{Code: "130505", Name: "任泽区", Type: "市辖区"},
@@ -128,7 +128,7 @@ var areas = []Province{
 			{Code: "130581", Name: "南宫市", Type: "县级市"},
 			{Code: "130582", Name: "沙河市", Type: "县级市"},
 		}},
-		{Code: "1306", Name: "保定市", Type: "地级市", Cities: []City{
+		{Code: "1306", Name: "保定市", Type: "地级市", Districts: []District{
 			{Code: "130602", Name: "竞秀区", Type: "市辖区"},
 			{Code: "130606", Name: "莲池区", Type: "市辖区"},
 			{Code: "130607", Name: "满城区", Type: "市辖区"},
@@ -154,7 +154,7 @@ var areas = []Province{
 			{Code: "130683", Name: "安国市", Type: "县级市"},
 			{Code: "130684", Name: "高碑店市", Type: "县级市"},
 		}},
-		{Code: "1307", Name: "张家口市", Type: "地级市", Cities: []City{
+		{Code: "1307", Name: "张家口市", Type: "地级市", Districts: []District{
 			{Code: "130702", Name: "桥东区", Type: "市辖区"},
 			{Code: "130703", Name: "桥西区", Type: "市辖区"},
 			{Code: "130705", Name: "宣化区", Type: "市辖区"},
@@ -172,7 +172,7 @@ var areas = []Province{
 			{Code: "130731", Name: "涿鹿县", Type: "县"},
 			{Code: "130732", Name: "赤城县", Type: "县"},
 		}},
-		{Code: "1308", Name: "承德市", Type: "地级市", Cities: []City{
+		{Code: "1308", Name: "承德市", Type: "地级市", Districts: []District{
 			{Code: "130802", Name: "双桥区", Type: "市辖区"},
 			{Code: "130803", Name: "双滦区", Type: "市辖区"},
 			{Code: "130804", Name: "鹰手营子矿区", Type: "市辖区"},
@@ -185,7 +185,7 @@ var areas = []Province{
 			{Code: "130828", Name: "围场满族蒙古族自治县", Type: "自治县"},
 			{Code: "130881", Name: "平泉市", Type: "县级市"},
 		}},
-		{Code: "1309", Name: "沧州市", Type: "地级市", Cities: []City{
+		{Code: "1309", Name: "沧州市", Type: "地级市", Districts: []District{
 			{Code: "130902", Name: "新华区", Type: "市辖区"},
 			{Code: "130903", Name: "运河区", Type: "市辖区"},
 			{Code: "130921", Name: "沧县", Type: "县"},
@@ -203,7 +203,7 @@ var areas = []Province{
 			{Code: "130983", Name: "黄骅市", Type: "县级市"},
 			{Code: "130984", Name: "河间市", Type: "县级市"},
 		}},
-		{Code: "1310", Name: "廊坊市", Type: "地级市", Cities: []City{
+		{Code: "1310", Name: "廊坊市", Type: "地级市", Districts: []District{
 			{Code: "131002", Name: "安次区", Type: "市辖区"},
 			{Code: "131003", Name: "广阳区", Type: "市辖区"},
 			{Code: "131022", Name: "固安县", Type: "县"},
@@ -215,7 +215,7 @@ var areas = []Province{
 			{Code: "131081", Name: "霸州市", Type: "县级市"},
 			{Code: "131082", Name: "三河市", Type: "县级市"},
 		}},
-		{Code: "1311", Name: "衡水市", Type: "地级市", Cities: []City{
+		{Code: "1311", Name: "衡水市", Type: "地级市", Districts: []District{
 			{Code: "131102", Name: "桃城区", Type: "市辖区"},
 			{Code: "131103", Name: "冀州区", Type: "市辖区"},
 			{Code: "131121", Name: "枣强县", Type: "县"},
@@ -230,7 +230,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "14", Name: "山西省", Type: "省", Cities: []City{
-		{Code: "1401", Name: "太原市", Type: "地级市", Cities: []City{
+		{Code: "1401", Name: "太原市", Type: "地级市", Districts: []District{
 			{Code: "140105", Name: "小店区", Type: "市辖区"},
 			{Code: "140106", Name: "迎泽区", Type: "市辖区"},
 			{Code: "140107", Name: "杏花岭区", Type: "市辖区"},
@@ -242,7 +242,7 @@ var areas = []Province{
 			{Code: "140123", Name: "娄烦县", Type: "县"},
 			{Code: "140181", Name: "古交市", Type: "县级市"},
 		}},
-		{Code: "1402", Name: "大同市", Type: "地级市", Cities: []City{
+		{Code: "1402", Name: "大同市", Type: "地级市", Districts: []District{
 			{Code: "140212", Name: "新荣区", Type: "市辖区"},
 			{Code: "140213", Name: "平城区", Type: "市辖区"},
 			{Code: "140214", Name: "云冈区", Type: "市辖区"},
@@ -254,14 +254,14 @@ var areas = []Province{
 			{Code: "140225", Name: "浑源县", Type: "县"},
 			{Code: "140226", Name: "左云县", Type: "县"},
 		}},
-		{Code: "1403", Name: "阳泉市", Type: "地级市", Cities: []City{
+		{Code: "1403", Name: "阳泉市", Type: "地级市", Districts: []District{
 			{Code: "140302", Name: "城区", Type: "市辖区"},
 			{Code: "140303", Name: "矿区", Type: "市辖区"},
 			{Code: "140311", Name: "郊区", Type: "市辖区"},
 			{Code: "140321", Name: "平定县", Type: "县"},
 			{Code: "140322", Name: "盂县", Type: "县"},
 		}},
-		{Code: "1404", Name: "长治市", Type: "地级市", Cities: []City{
+		{Code: "1404", Name: "长治市", Type: "地级市", Districts: []District{
 			{Code: "140403", Name: "潞州区", Type: "市辖区"},
 			{Code: "140404", Name: "上党区", Type: "市辖区"},
 			{Code: "140405", Name: "屯留区", Type: "市辖区"},
@@ -275,7 +275,7 @@ var areas = []Province{
 			{Code: "140430", Name: "沁县", Type: "县"},
 			{Code: "140431", Name: "沁源县", Type: "县"},
 		}},
-		{Code: "1405", Name: "晋城市", Type: "地级市", Cities: []City{
+		{Code: "1405", Name: "晋城市", Type: "地级市", Districts: []District{
 			{Code: "140502", Name: "城区", Type: "市辖区"},
 			{Code: "140521", Name: "沁水县", Type: "县"},
 			{Code: "140522", Name: "阳城县", Type: "县"},
@@ -283,7 +283,7 @@ var areas = []Province{
 			{Code: "140525", Name: "泽州县", Type: "县"},
 			{Code: "140581", Name: "高平市", Type: "县级市"},
 		}},
-		{Code: "1406", Name: "朔州市", Type: "地级市", Cities: []City{
+		{Code: "1406", Name: "朔州市", Type: "地级市", Districts: []District{
 			{Code: "140602", Name: "朔城区", Type: "市辖区"},
 			{Code: "140603", Name: "平鲁区", Type: "市辖区"},
 			{Code: "140621", Name: "山阴县", Type: "县"},
@@ -291,7 +291,7 @@ var areas = []Province{
 			{Code: "140623", Name: "右玉县", Type: "县"},
 			{Code: "140681", Name: "怀仁市", Type: "县级市"},
 		}},
-		{Code: "1407", Name: "晋中市", Type: "地级市", Cities: []City{
+		{Code: "1407", Name: "晋中市", Type: "地级市", Districts: []District{
 			{Code: "140702", Name: "榆次区", Type: "市辖区"},
 			{Code: "140703", Name: "太谷区", Type: "市辖区"},
 			{Code: "140721", Name: "榆社县", Type: "县"},
@@ -304,7 +304,7 @@ var areas = []Province{
 			{Code: "140729", Name: "灵石县", Type: "县"},
 			{Code: "140781", Name: "介休市", Type: "县级市"},
 		}},
-		{Code: "1408", Name: "运城市", Type: "地级市", Cities: []City{
+		{Code: "1408", Name: "运城市", Type: "地级市", Districts: []District{
 			{Code: "140802", Name: "盐湖区", Type: "市辖区"},
 			{Code: "140821", Name: "临猗县", Type: "县"},
 			{Code: "140822", Name: "万荣县", Type: "县"},
@@ -319,7 +319,7 @@ var areas = []Province{
 			{Code: "140881", Name: "永济市", Type: "县级市"},
 			{Code: "140882", Name: "河津市", Type: "县级市"},
 		}},
-		{Code: "1409", Name: "忻州市", Type: "地级市", Cities: []City{
+		{Code: "1409", Name: "忻州市", Type: "地级市", Districts: []District{
 			{Code: "140902", Name: "忻府区", Type: "市辖区"},
 			{Code: "140921", Name: "定襄县", Type: "县"},
 			{Code: "140922", Name: "五台县", Type: "县"},
@@ -335,7 +335,7 @@ var areas = []Province{
 			{Code: "140932", Name: "偏关县", Type: "县"},
 			{Code: "140981", Name: "原平市", Type: "县级市"},
 		}},
-		{Code: "1410", Name: "临汾市", Type: "地级市", Cities: []City{
+		{Code: "1410", Name: "临汾市", Type: "地级市", Districts: []District{
 			{Code: "141002", Name: "尧都区", Type: "市辖区"},
 			{Code: "141021", Name: "曲沃县", Type: "县"},
 			{Code: "141022", Name: "翼城县", Type: "县"},
@@ -354,7 +354,7 @@ var areas = []Province{
 			{Code: "141081", Name: "侯马市", Type: "县级市"},
 			{Code: "141082", Name: "霍州市", Type: "县级市"},
 		}},
-		{Code: "1411", Name: "吕梁市", Type: "地级市", Cities: []City{
+		{Code: "1411", Name: "吕梁市", Type: "地级市", Districts: []District{
 			{Code: "141102", Name: "离石区", Type: "市辖区"},
 			{Code: "141121", Name: "文水县", Type: "县"},
 			{Code: "141122", Name: "交城县", Type: "县"},
@@ -371,7 +371,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "15", Name: "内蒙古自治区", Type: "自治区", Cities: []City{
-		{Code: "1501", Name: "呼和浩特市", Type: "地级市", Cities: []City{
+		{Code: "1501", Name: "呼和浩特市", Type: "地级市", Districts: []District{
 			{Code: "150102", Name: "新城区", Type: "市辖区"},
 			{Code: "150103", Name: "回民区", Type: "市辖区"},
 			{Code: "150104", Name: "玉泉区", Type: "市辖区"},
@@ -382,7 +382,7 @@ var areas = []Province{
 			{Code: "150124", Name: "清水河县", Type: "县"},
 			{Code: "150125", Name: "武川县", Type: "县"},
 		}},
-		{Code: "1502", Name: "包头市", Type: "地级市", Cities: []City{
+		{Code: "1502", Name: "包头市", Type: "地级市", Districts: []District{
 			{Code: "150202", Name: "东河区", Type: "市辖区"},
 			{Code: "150203", Name: "昆都仑区", Type: "市辖区"},
 			{Code: "150204", Name: "青山区", Type: "市辖区"},
@@ -393,12 +393,12 @@ var areas = []Province{
 			{Code: "150222", Name: "固阳县", Type: "县"},
 			{Code: "150223", Name: "达尔罕茂明安联合旗", Type: "旗"},
 		}},
-		{Code: "1503", Name: "乌海市", Type: "地级市", Cities: []City{
+		{Code: "1503", Name: "乌海市", Type: "地级市", Districts: []District{
 			{Code: "150302", Name: "海勃湾区", Type: "市辖区"},
 			{Code: "150303", Name: "海南区", Type: "市辖区"},
 			{Code: "150304", Name: "乌达区", Type: "市辖区"},
 		}},
-		{Code: "1504", Name: "赤峰市", Type: "地级市", Cities: []City{
+		{Code: "1504", Name: "赤峰市", Type: "地级市", Districts: []District{
 			{Code: "150402", Name: "红山区", Type: "市辖区"},
 			{Code: "150403", Name: "元宝山区", Type: "市辖区"},
 			{Code: "150404", Name: "松山区", Type: "市辖区"},
@@ -412,7 +412,7 @@ var areas = []Province{
 			{Code: "150429", Name: "宁城县", Type: "县"},
 			{Code: "150430", Name: "敖汉旗", Type: "旗"},
 		}},
-		{Code: "1505", Name: "通辽市", Type: "地级市", Cities: []City{
+		{Code: "1505", Name: "通辽市", Type: "地级市", Districts: []District{
 			{Code: "150502", Name: "科尔沁区", Type: "市辖区"},
 			{Code: "150521", Name: "科尔沁左翼中旗", Type: "旗"},
 			{Code: "150522", Name: "科尔沁左翼后旗", Type: "旗"},
@@ -422,7 +422,7 @@ var areas = []Province{
 			{Code: "150526", Name: "扎鲁特旗", Type: "旗"},
 			{Code: "150581", Name: "霍林郭勒市", Type: "县级市"},
 		}},
-		{Code: "1506", Name: "鄂尔多斯市", Type: "地级市", Cities: []City{
+		{Code: "1506", Name: "鄂尔多斯市", Type: "地级市", Districts: []District{
 			{Code: "150602", Name: "东胜区", Type: "市辖区"},
 			{Code: "150603", Name: "康巴什区", Type: "市辖区"},
 			{Code: "150621", Name: "达拉特旗", Type: "旗"},
@@ -433,7 +433,7 @@ var areas = []Province{
 			{Code: "150626", Name: "乌审旗", Type: "旗"},
 			{Code: "150627", Name: "伊金霍洛旗", Type: "旗"},
 		}},
-		{Code: "1507", Name: "呼伦贝尔市", Type: "地级市", Cities: []City{
+		{Code: "1507", Name: "呼伦贝尔市", Type: "地级市", Districts: []District{
 			{Code: "150702", Name: "海拉尔区", Type: "市辖区"},
 			{Code: "150703", Name: "扎赉诺尔区", Type: "市辖区"},
 			{Code: "150721", Name: "阿荣旗", Type: "旗"},
@@ -449,7 +449,7 @@ var areas = []Province{
 			{Code: "150784", Name: "额尔古纳市", Type: "县级市"},
 			{Code: "150785", Name: "根河市", Type: "县级市"},
 		}},
-		{Code: "1508", Name: "巴彦淖尔市", Type: "地级市", Cities: []City{
+		{Code: "1508", Name: "巴彦淖尔市", Type: "地级市", Districts: []District{
 			{Code: "150802", Name: "临河区", Type: "市辖区"},
 			{Code: "150821", Name: "五原县", Type: "县"},
 			{Code: "150822", Name: "磴口县", Type: "县"},
@@ -458,7 +458,7 @@ var areas = []Province{
 			{Code: "150825", Name: "乌拉特后旗", Type: "旗"},
 			{Code: "150826", Name: "杭锦后旗", Type: "旗"},
 		}},
-		{Code: "1509", Name: "乌兰察布市", Type: "地级市", Cities: []City{
+		{Code: "1509", Name: "乌兰察布市", Type: "地级市", Districts: []District{
 			{Code: "150902", Name: "集宁区", Type: "市辖区"},
 			{Code: "150921", Name: "卓资县", Type: "县"},
 			{Code: "150922", Name: "化德县", Type: "县"},
@@ -471,7 +471,7 @@ var areas = []Province{
 			{Code: "150929", Name: "四子王旗", Type: "旗"},
 			{Code: "150981", Name: "丰镇市", Type: "县级市"},
 		}},
-		{Code: "1522", Name: "兴安盟", Type: "盟", Cities: []City{
+		{Code: "1522", Name: "兴安盟", Type: "盟", Districts: []District{
 			{Code: "152201", Name: "乌兰浩特市", Type: "县级市"},
 			{Code: "152202", Name: "阿尔山市", Type: "县级市"},
 			{Code: "152221", Name: "科尔沁右翼前旗", Type: "旗"},
@@ -479,7 +479,7 @@ var areas = []Province{
 			{Code: "152223", Name: "扎赉特旗", Type: "旗"},
 			{Code: "152224", Name: "突泉县", Type: "县"},
 		}},
-		{Code: "1525", Name: "锡林郭勒盟", Type: "盟", Cities: []City{
+		{Code: "1525", Name: "锡林郭勒盟", Type: "盟", Districts: []District{
 			{Code: "152501", Name: "二连浩特市", Type: "县级市"},
 			{Code: "152502", Name: "锡林浩特市", Type: "县级市"},
 			{Code: "152522", Name: "阿巴嘎旗", Type: "旗"},
@@ -493,14 +493,14 @@ var areas = []Province{
 			{Code: "152530", Name: "正蓝旗", Type: "旗"},
 			{Code: "152531", Name: "多伦县", Type: "县"},
 		}},
-		{Code: "1529", Name: "阿拉善盟", Type: "盟", Cities: []City{
+		{Code: "1529", Name: "阿拉善盟", Type: "盟", Districts: []District{
 			{Code: "152921", Name: "阿拉善左旗", Type: "旗"},
 			{Code: "152922", Name: "阿拉善右旗", Type: "旗"},
 			{Code: "152923", Name: "额济纳旗", Type: "旗"},
 		}},
 	}},
 	{Code: "21", Name: "辽宁省", Type: "省", Cities: []City{
-		{Code: "2101", Name: "沈阳市", Type: "地级市", Cities: []City{
+		{Code: "2101", Name: "沈阳市", Type: "地级市", Districts: []District{
 			{Code: "210102", Name: "和平区", Type: "市辖区"},
 			{Code: "210103", Name: "沈河区", Type: "市辖区"},
 			{Code: "210104", Name: "大东区", Type: "市辖区"},
@@ -515,7 +515,7 @@ var areas = []Province{
 			{Code: "210124", Name: "法库县", Type: "县"},
 			{Code: "210181", Name: "新民市", Type: "县级市"},
 		}},
-		{Code: "2102", Name: "大连市", Type: "地级市", Cities: []City{
+		{Code: "2102", Name: "大连市", Type: "地级市", Districts: []District{
 			{Code: "210202", Name: "中山区", Type: "市辖区"},
 			{Code: "210203", Name: "西岗区", Type: "市辖区"},
 			{Code: "210204", Name: "沙河口区", Type: "市辖区"},
@@ -527,7 +527,7 @@ var areas = []Province{
 			{Code: "210281", Name: "瓦房店市", Type: "县级市"},
 			{Code: "210283", Name: "庄河市", Type: "县级市"},
 		}},
-		{Code: "2103", Name: "鞍山市", Type: "地级市", Cities: []City{
+		{Code: "2103", Name: "鞍山市", Type: "地级市", Districts: []District{
 			{Code: "210302", Name: "铁东区", Type: "市辖区"},
 			{Code: "210303", Name: "铁西区", Type: "市辖区"},
 			{Code: "210304", Name: "立山区", Type: "市辖区"},
@@ -536,7 +536,7 @@ var areas = []Province{
 			{Code: "210323", Name: "岫岩满族自治县", Type: "自治县"},
 			{Code: "210381", Name: "海城市", Type: "县级市"},
 		}},
-		{Code: "2104", Name: "抚顺市", Type: "地级市", Cities: []City{
+		{Code: "2104", Name: "抚顺市", Type: "地级市", Districts: []District{
 			{Code: "210402", Name: "新抚区", Type: "市辖区"},
 			{Code: "210403", Name: "东洲区", Type: "市辖区"},
 			{Code: "210404", Name: "望花区", Type: "市辖区"},
@@ -545,7 +545,7 @@ var areas = []Province{
 			{Code: "210422", Name: "新宾满族自治县", Type: "自治县"},
 			{Code: "210423", Name: "清原满族自治县", Type: "自治县"},
 		}},
-		{Code: "2105", Name: "本溪市", Type: "地级市", Cities: []City{
+		{Code: "2105", Name: "本溪市", Type: "地级市", Districts: []District{
 			{Code: "210502", Name: "平山区", Type: "市辖区"},
 			{Code: "210503", Name: "溪湖区", Type: "市辖区"},
 			{Code: "210504", Name: "明山区", Type: "市辖区"},
@@ -553,7 +553,7 @@ var areas = []Province{
 			{Code: "210521", Name: "本溪满族自治县", Type: "自治县"},
 			{Code: "210522", Name: "桓仁满族自治县", Type: "自治县"},
 		}},
-		{Code: "2106", Name: "丹东市", Type: "地级市", Cities: []City{
+		{Code: "2106", Name: "丹东市", Type: "地级市", Districts: []District{
 			{Code: "210602", Name: "元宝区", Type: "市辖区"},
 			{Code: "210603", Name: "振兴区", Type: "市辖区"},
 			{Code: "210604", Name: "振安区", Type: "市辖区"},
@@ -561,7 +561,7 @@ var areas = []Province{
 			{Code: "210681", Name: "东港市", Type: "县级市"},
 			{Code: "210682", Name: "凤城市", Type: "县级市"},
 		}},
-		{Code: "2107", Name: "锦州市", Type: "地级市", Cities: []City{
+		{Code: "2107", Name: "锦州市", Type: "地级市", Districts: []District{
 			{Code: "210702", Name: "古塔区", Type: "市辖区"},
 			{Code: "210703", Name: "凌河区", Type: "市辖区"},
 			{Code: "210711", Name: "太和区", Type: "市辖区"},
@@ -570,7 +570,7 @@ var areas = []Province{
 			{Code: "210781", Name: "凌海市", Type: "县级市"},
 			{Code: "210782", Name: "北镇市", Type: "县级市"},
 		}},
-		{Code: "2108", Name: "营口市", Type: "地级市", Cities: []City{
+		{Code: "2108", Name: "营口市", Type: "地级市", Districts: []District{
 			{Code: "210802", Name: "站前区", Type: "市辖区"},
 			{Code: "210803", Name: "西市区", Type: "市辖区"},
 			{Code: "210804", Name: "鲅鱼圈区", Type: "市辖区"},
@@ -578,7 +578,7 @@ var areas = []Province{
 			{Code: "210881", Name: "盖州市", Type: "县级市"},
 			{Code: "210882", Name: "大石桥市", Type: "县级市"},
 		}},
-		{Code: "2109", Name: "阜新市", Type: "地级市", Cities: []City{
+		{Code: "2109", Name: "阜新市", Type: "地级市", Districts: []District{
 			{Code: "210902", Name: "海州区", Type: "市辖区"},
 			{Code: "210903", Name: "新邱区", Type: "市辖区"},
 			{Code: "210904", Name: "太平区", Type: "市辖区"},
@@ -587,7 +587,7 @@ var areas = []Province{
 			{Code: "210921", Name: "阜新蒙古族自治县", Type: "自治县"},
 			{Code: "210922", Name: "彰武县", Type: "县"},
 		}},
-		{Code: "2110", Name: "辽阳市", Type: "地级市", Cities: []City{
+		{Code: "2110", Name: "辽阳市", Type: "地级市", Districts: []District{
 			{Code: "211002", Name: "白塔区", Type: "市辖区"},
 			{Code: "211003", Name: "文圣区", Type: "市辖区"},
 			{Code: "211004", Name: "宏伟区", Type: "市辖区"},
@@ -596,13 +596,13 @@ var areas = []Province{
 			{Code: "211021", Name: "辽阳县", Type: "县"},
 			{Code: "211081", Name: "灯塔市", Type: "县级市"},
 		}},
-		{Code: "2111", Name: "盘锦市", Type: "地级市", Cities: []City{
+		{Code: "2111", Name: "盘锦市", Type: "地级市", Districts: []District{
 			{Code: "211102", Name: "双台子区", Type: "市辖区"},
 			{Code: "211103", Name: "兴隆台区", Type: "市辖区"},
 			{Code: "211104", Name: "大洼区", Type: "市辖区"},
 			{Code: "211122", Name: "盘山县", Type: "县"},
 		}},
-		{Code: "2112", Name: "铁岭市", Type: "地级市", Cities: []City{
+		{Code: "2112", Name: "铁岭市", Type: "地级市", Districts: []District{
 			{Code: "211202", Name: "银州区", Type: "市辖区"},
 			{Code: "211204", Name: "清河区", Type: "市辖区"},
 			{Code: "211221", Name: "铁岭县", Type: "县"},
@@ -611,7 +611,7 @@ var areas = []Province{
 			{Code: "211281", Name: "调兵山市", Type: "县级市"},
 			{Code: "211282", Name: "开原市", Type: "县级市"},
 		}},
-		{Code: "2113", Name: "朝阳市", Type: "地级市", Cities: []City{
+		{Code: "2113", Name: "朝阳市", Type: "地级市", Districts: []District{
 			{Code: "211302", Name: "双塔区", Type: "市辖区"},
 			{Code: "211303", Name: "龙城区", Type: "市辖区"},
 			{Code: "211321", Name: "朝阳县", Type: "县"},
@@ -620,7 +620,7 @@ var areas = []Province{
 			{Code: "211381", Name: "北票市", Type: "县级市"},
 			{Code: "211382", Name: "凌源市", Type: "县级市"},
 		}},
-		{Code: "2114", Name: "葫芦岛市", Type: "地级市", Cities: []City{
+		{Code: "2114", Name: "葫芦岛市", Type: "地级市", Districts: []District{
 			{Code: "211402", Name: "连山区", Type: "市辖区"},
 			{Code: "211403", Name: "龙港区", Type: "市辖区"},
 			{Code: "211404", Name: "南票区", Type: "市辖区"},
@@ -630,7 +630,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "22", Name: "吉林省", Type: "省", Cities: []City{
-		{Code: "2201", Name: "长春市", Type: "地级市", Cities: []City{
+		{Code: "2201", Name: "长春市", Type: "地级市", Districts: []District{
 			{Code: "220102", Name: "南关区", Type: "市辖区"},
 			{Code: "220103", Name: "宽城区", Type: "市辖区"},
 			{Code: "220104", Name: "朝阳区", Type: "市辖区"},
@@ -643,7 +643,7 @@ var areas = []Province{
 			{Code: "220183", Name: "德惠市", Type: "县级市"},
 			{Code: "220184", Name: "公主岭市", Type: "县级市"},
 		}},
-		{Code: "2202", Name: "吉林市", Type: "地级市", Cities: []City{
+		{Code: "2202", Name: "吉林市", Type: "地级市", Districts: []District{
 			{Code: "220202", Name: "昌邑区", Type: "市辖区"},
 			{Code: "220203", Name: "龙潭区", Type: "市辖区"},
 			{Code: "220204", Name: "船营区", Type: "市辖区"},
@@ -654,20 +654,20 @@ var areas = []Province{
 			{Code: "220283", Name: "舒兰市", Type: "县级市"},
 			{Code: "220284", Name: "磐石市", Type: "县级市"},
 		}},
-		{Code: "2203", Name: "四平市", Type: "地级市", Cities: []City{
+		{Code: "2203", Name: "四平市", Type: "地级市", Districts: []District{
 			{Code: "220302", Name: "铁西区", Type: "市辖区"},
 			{Code: "220303", Name: "铁东区", Type: "市辖区"},
 			{Code: "220322", Name: "梨树县", Type: "县"},
 			{Code: "220323", Name: "伊通满族自治县", Type: "自治县"},
 			{Code: "220382", Name: "双辽市", Type: "县级市"},
 		}},
-		{Code: "2204", Name: "辽源市", Type: "地级市", Cities: []City{
+		{Code: "2204", Name: "辽源市", Type: "地级市", Districts: []District{
 			{Code: "220402", Name: "龙山区", Type: "市辖区"},
 			{Code: "220403", Name: "西安区", Type: "市辖区"},
 			{Code: "220421", Name: "东丰县", Type: "县"},
 			{Code: "220422", Name: "东辽县", Type: "县"},
 		}},
-		{Code: "2205", Name: "通化市", Type: "地级市", Cities: []City{
+		{Code: "2205", Name: "通化市", Type: "地级市", Districts: []District{
 			{Code: "220502", Name: "东昌区", Type: "市辖区"},
 			{Code: "220503", Name: "二道江区", Type: "市辖区"},
 			{Code: "220521", Name: "通化县", Type: "县"},
@@ -676,7 +676,7 @@ var areas = []Province{
 			{Code: "220581", Name: "梅河口市", Type: "县级市"},
 			{Code: "220582", Name: "集安市", Type: "县级市"},
 		}},
-		{Code: "2206", Name: "白山市", Type: "地级市", Cities: []City{
+		{Code: "2206", Name: "白山市", Type: "地级市", Districts: []District{
 			{Code: "220602", Name: "浑江区", Type: "市辖区"},
 			{Code: "220605", Name: "江源区", Type: "市辖区"},
 			{Code: "220621", Name: "抚松县", Type: "县"},
@@ -684,21 +684,21 @@ var areas = []Province{
 			{Code: "220623", Name: "长白朝鲜族自治县", Type: "自治县"},
 			{Code: "220681", Name: "临江市", Type: "县级市"},
 		}},
-		{Code: "2207", Name: "松原市", Type: "地级市", Cities: []City{
+		{Code: "2207", Name: "松原市", Type: "地级市", Districts: []District{
 			{Code: "220702", Name: "宁江区", Type: "市辖区"},
 			{Code: "220721", Name: "前郭尔罗斯蒙古族自治县", Type: "自治县"},
 			{Code: "220722", Name: "长岭县", Type: "县"},
 			{Code: "220723", Name: "乾安县", Type: "县"},
 			{Code: "220781", Name: "扶余市", Type: "县级市"},
 		}},
-		{Code: "2208", Name: "白城市", Type: "地级市", Cities: []City{
+		{Code: "2208", Name: "白城市", Type: "地级市", Districts: []District{
 			{Code: "220802", Name: "洮北区", Type: "市辖区"},
 			{Code: "220821", Name: "镇赉县", Type: "县"},
 			{Code: "220822", Name: "通榆县", Type: "县"},
 			{Code: "220881", Name: "洮南市", Type: "县级市"},
 			{Code: "220882", Name: "大安市", Type: "县级市"},
 		}},
-		{Code: "2224", Name: "延边朝鲜族自治州", Type: "自治州", Cities: []City{
+		{Code: "2224", Name: "延边朝鲜族自治州", Type: "自治州", Districts: []District{
 			{Code: "222401", Name: "延吉市", Type: "县级市"},
 			{Code: "222402", Name: "图们市", Type: "县级市"},
 			{Code: "222403", Name: "敦化市", Type: "县级市"},
@@ -710,7 +710,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "23", Name: "黑龙江省", Type: "省", Cities: []City{
-		{Code: "2301", Name: "哈尔滨市", Type: "地级市", Cities: []City{
+		{Code: "2301", Name: "哈尔滨市", Type: "地级市", Districts: []District{
 			{Code: "230102", Name: "道里区", Type: "市辖区"},
 			{Code: "230103", Name: "南岗区", Type: "市辖区"},
 			{Code: "230104", Name: "道外区", Type: "市辖区"},
@@ -730,7 +730,7 @@ var areas = []Province{
 			{Code: "230183", Name: "尚志市", Type: "县级市"},
 			{Code: "230184", Name: "五常市", Type: "县级市"},
 		}},
-		{Code: "2302", Name: "齐齐哈尔市", Type: "地级市", Cities: []City{
+		{Code: "2302", Name: "齐齐哈尔市", Type: "地级市", Districts: []District{
 			{Code: "230202", Name: "龙沙区", Type: "市辖区"},
 			{Code: "230203", Name: "建华区", Type: "市辖区"},
 			{Code: "230204", Name: "铁锋区", Type: "市辖区"},
@@ -748,7 +748,7 @@ var areas = []Province{
 			{Code: "230231", Name: "拜泉县", Type: "县"},
 			{Code: "230281", Name: "讷河市", Type: "县级市"},
 		}},
-		{Code: "2303", Name: "鸡西市", Type: "地级市", Cities: []City{
+		{Code: "2303", Name: "鸡西市", Type: "地级市", Districts: []District{
 			{Code: "230302", Name: "鸡冠区", Type: "市辖区"},
 			{Code: "230303", Name: "恒山区", Type: "市辖区"},
 			{Code: "230304", Name: "滴道区", Type: "市辖区"},
@@ -759,7 +759,7 @@ var areas = []Province{
 			{Code: "230381", Name: "虎林市", Type: "县级市"},
 			{Code: "230382", Name: "密山市", Type: "县级市"},
 		}},
-		{Code: "2304", Name: "鹤岗市", Type: "地级市", Cities: []City{
+		{Code: "2304", Name: "鹤岗市", Type: "地级市", Districts: []District{
 			{Code: "230402", Name: "向阳区", Type: "市辖区"},
 			{Code: "230403", Name: "工农区", Type: "市辖区"},
 			{Code: "230404", Name: "南山区", Type: "市辖区"},
@@ -769,7 +769,7 @@ var areas = []Province{
 			{Code: "230421", Name: "萝北县", Type: "县"},
 			{Code: "230422", Name: "绥滨县", Type: "县"},
 		}},
-		{Code: "2305", Name: "双鸭山市", Type: "地级市", Cities: []City{
+		{Code: "2305", Name: "双鸭山市", Type: "地级市", Districts: []District{
 			{Code: "230502", Name: "尖山区", Type: "市辖区"},
 			{Code: "230503", Name: "岭东区", Type: "市辖区"},
 			{Code: "230505", Name: "四方台区", Type: "市辖区"},
@@ -779,7 +779,7 @@ var areas = []Province{
 			{Code: "230523", Name: "宝清县", Type: "县"},
 			{Code: "230524", Name: "饶河县", Type: "县"},
 		}},
-		{Code: "2306", Name: "大庆市", Type: "地级市", Cities: []City{
+		{Code: "2306", Name: "大庆市", Type: "地级市", Districts: []District{
 			{Code: "230602", Name: "萨尔图区", Type: "市辖区"},
 			{Code: "230603", Name: "龙凤区", Type: "市辖区"},
 			{Code: "230604", Name: "让胡路区", Type: "市辖区"},
@@ -790,7 +790,7 @@ var areas = []Province{
 			{Code: "230623", Name: "林甸县", Type: "县"},
 			{Code: "230624", Name: "杜尔伯特蒙古族自治县", Type: "自治县"},
 		}},
-		{Code: "2307", Name: "伊春市", Type: "地级市", Cities: []City{
+		{Code: "2307", Name: "伊春市", Type: "地级市", Districts: []District{
 			{Code: "230717", Name: "伊美区", Type: "市辖区"},
 			{Code: "230718", Name: "乌翠区", Type: "市辖区"},
 			{Code: "230719", Name: "友好区", Type: "市辖区"},
@@ -802,7 +802,7 @@ var areas = []Province{
 			{Code: "230751", Name: "金林区", Type: "市辖区"},
 			{Code: "230781", Name: "铁力市", Type: "县级市"},
 		}},
-		{Code: "2308", Name: "佳木斯市", Type: "地级市", Cities: []City{
+		{Code: "2308", Name: "佳木斯市", Type: "地级市", Districts: []District{
 			{Code: "230803", Name: "向阳区", Type: "市辖区"},
 			{Code: "230804", Name: "前进区", Type: "市辖区"},
 			{Code: "230805", Name: "东风区", Type: "市辖区"},
@@ -814,13 +814,13 @@ var areas = []Province{
 			{Code: "230882", Name: "富锦市", Type: "县级市"},
 			{Code: "230883", Name: "抚远市", Type: "县级市"},
 		}},
-		{Code: "2309", Name: "七台河市", Type: "地级市", Cities: []City{
+		{Code: "2309", Name: "七台河市", Type: "地级市", Districts: []District{
 			{Code: "230902", Name: "新兴区", Type: "市辖区"},
 			{Code: "230903", Name: "桃山区", Type: "市辖区"},
 			{Code: "230904", Name: "茄子河区", Type: "市辖区"},
 			{Code: "230921", Name: "勃利县", Type: "县"},
 		}},
-		{Code: "2310", Name: "牡丹江市", Type: "地级市", Cities: []City{
+		{Code: "2310", Name: "牡丹江市", Type: "地级市", Districts: []District{
 			{Code: "231002", Name: "东安区", Type: "市辖区"},
 			{Code: "231003", Name: "阳明区", Type: "市辖区"},
 			{Code: "231004", Name: "爱民区", Type: "市辖区"},
@@ -832,7 +832,7 @@ var areas = []Province{
 			{Code: "231085", Name: "穆棱市", Type: "县级市"},
 			{Code: "231086", Name: "东宁市", Type: "县级市"},
 		}},
-		{Code: "2311", Name: "黑河市", Type: "地级市", Cities: []City{
+		{Code: "2311", Name: "黑河市", Type: "地级市", Districts: []District{
 			{Code: "231102", Name: "爱辉区", Type: "市辖区"},
 			{Code: "231123", Name: "逊克县", Type: "县"},
 			{Code: "231124", Name: "孙吴县", Type: "县"},
@@ -840,7 +840,7 @@ var areas = []Province{
 			{Code: "231182", Name: "五大连池市", Type: "县级市"},
 			{Code: "231183", Name: "嫩江市", Type: "县级市"},
 		}},
-		{Code: "2312", Name: "绥化市", Type: "地级市", Cities: []City{
+		{Code: "2312", Name: "绥化市", Type: "地级市", Districts: []District{
 			{Code: "231202", Name: "北林区", Type: "市辖区"},
 			{Code: "231221", Name: "望奎县", Type: "县"},
 			{Code: "231222", Name: "兰西县", Type: "县"},
@@ -852,7 +852,7 @@ var areas = []Province{
 			{Code: "231282", Name: "肇东市", Type: "县级市"},
 			{Code: "231283", Name: "海伦市", Type: "县级市"},
 		}},
-		{Code: "2327", Name: "大兴安岭地区", Type: "地区", Cities: []City{
+		{Code: "2327", Name: "大兴安岭地区", Type: "地区", Districts: []District{
 			{Code: "232701", Name: "漠河市", Type: "县级市"},
 			{Code: "232721", Name: "呼玛县", Type: "县"},
 			{Code: "232722", Name: "塔河县", Type: "县"},
@@ -877,7 +877,7 @@ var areas = []Province{
 		{Code: "310151", Name: "崇明区", Type: "市辖区"},
 	}},
 	{Code: "32", Name: "江苏省", Type: "省", Cities: []City{
-		{Code: "3201", Name: "南京市", Type: "地级市", Cities: []City{
+		{Code: "3201", Name: "南京市", Type: "地级市", Districts: []District{
 			{Code: "320102", Name: "玄武区", Type: "市辖区"},
 			{Code: "320104", Name: "秦淮区", Type: "市辖区"},
 			{Code: "320105", Name: "建邺区", Type: "市辖区"},
@@ -890,7 +890,7 @@ var areas = []Province{
 			{Code: "320117", Name: "溧水区", Type: "市辖区"},
 			{Code: "320118", Name: "高淳区", Type: "市辖区"},
 		}},
-		{Code: "3202", Name: "无锡市", Type: "地级市", Cities: []City{
+		{Code: "3202", Name: "无锡市", Type: "地级市", Districts: []District{
 			{Code: "320205", Name: "锡山区", Type: "市辖区"},
 			{Code: "320206", Name: "惠山区", Type: "市辖区"},
 			{Code: "320211", Name: "滨湖区", Type: "市辖区"},
@@ -899,7 +899,7 @@ var areas = []Province{
 			{Code: "320281", Name: "江阴市", Type: "县级市"},
 			{Code: "320282", Name: "宜兴市", Type: "县级市"},
 		}},
-		{Code: "3203", Name: "徐州市", Type: "地级市", Cities: []City{
+		{Code: "3203", Name: "徐州市", Type: "地级市", Districts: []District{
 			{Code: "320302", Name: "鼓楼区", Type: "市辖区"},
 			{Code: "320303", Name: "云龙区", Type: "市辖区"},
 			{Code: "320305", Name: "贾汪区", Type: "市辖区"},
@@ -911,7 +911,7 @@ var areas = []Province{
 			{Code: "320381", Name: "新沂市", Type: "县级市"},
 			{Code: "320382", Name: "邳州市", Type: "县级市"},
 		}},
-		{Code: "3204", Name: "常州市", Type: "地级市", Cities: []City{
+		{Code: "3204", Name: "常州市", Type: "地级市", Districts: []District{
 			{Code: "320402", Name: "天宁区", Type: "市辖区"},
 			{Code: "320404", Name: "钟楼区", Type: "市辖区"},
 			{Code: "320411", Name: "新北区", Type: "市辖区"},
@@ -919,7 +919,7 @@ var areas = []Province{
 			{Code: "320413", Name: "金坛区", Type: "市辖区"},
 			{Code: "320481", Name: "溧阳市", Type: "县级市"},
 		}},
-		{Code: "3205", Name: "苏州市", Type: "地级市", Cities: []City{
+		{Code: "3205", Name: "苏州市", Type: "地级市", Districts: []District{
 			{Code: "320505", Name: "虎丘区", Type: "市辖区"},
 			{Code: "320506", Name: "吴中区", Type: "市辖区"},
 			{Code: "320507", Name: "相城区", Type: "市辖区"},
@@ -930,7 +930,7 @@ var areas = []Province{
 			{Code: "320583", Name: "昆山市", Type: "县级市"},
 			{Code: "320585", Name: "太仓市", Type: "县级市"},
 		}},
-		{Code: "3206", Name: "南通市", Type: "地级市", Cities: []City{
+		{Code: "3206", Name: "南通市", Type: "地级市", Districts: []District{
 			{Code: "320612", Name: "通州区", Type: "市辖区"},
 			{Code: "320613", Name: "崇川区", Type: "市辖区"},
 			{Code: "320614", Name: "海门区", Type: "市辖区"},
@@ -939,7 +939,7 @@ var areas = []Province{
 			{Code: "320682", Name: "如皋市", Type: "县级市"},
 			{Code: "320685", Name: "海安市", Type: "县级市"},
 		}},
-		{Code: "3207", Name: "连云港市", Type: "地级市", Cities: []City{
+		{Code: "3207", Name: "连云港市", Type: "地级市", Districts: []District{
 			{Code: "320703", Name: "连云区", Type: "市辖区"},
 			{Code: "320706", Name: "海州区", Type: "市辖区"},
 			{Code: "320707", Name: "赣榆区", Type: "市辖区"},
@@ -947,7 +947,7 @@ var areas = []Province{
 			{Code: "320723", Name: "灌云县", Type: "县"},
 			{Code: "320724", Name: "灌南县", Type: "县"},
 		}},
-		{Code: "3208", Name: "淮安市", Type: "地级市", Cities: []City{
+		{Code: "3208", Name: "淮安市", Type: "地级市", Districts: []District{
 			{Code: "320803", Name: "淮安区", Type: "市辖区"},
 			{Code: "320804", Name: "淮阴区", Type: "市辖区"},
 			{Code: "320812", Name: "清江浦区", Type: "市辖区"},
@@ -956,7 +956,7 @@ var areas = []Province{
 			{Code: "320830", Name: "盱眙县", Type: "县"},
 			{Code: "320831", Name: "金湖县", Type: "县"},
 		}},
-		{Code: "3209", Name: "盐城市", Type: "地级市", Cities: []City{
+		{Code: "3209", Name: "盐城市", Type: "地级市", Districts: []District{
 			{Code: "320902", Name: "亭湖区", Type: "市辖区"},
 			{Code: "320903", Name: "盐都区", Type: "市辖区"},
 			{Code: "320904", Name: "大丰区", Type: "市辖区"},
@@ -967,7 +967,7 @@ var areas = []Province{
 			{Code: "320925", Name: "建湖县", Type: "县"},
 			{Code: "320981", Name: "东台市", Type: "县级市"},
 		}},
-		{Code: "3210", Name: "扬州市", Type: "地级市", Cities: []City{
+		{Code: "3210", Name: "扬州市", Type: "地级市", Districts: []District{
 			{Code: "321002", Name: "广陵区", Type: "市辖区"},
 			{Code: "321003", Name: "邗江区", Type: "市辖区"},
 			{Code: "321012", Name: "江都区", Type: "市辖区"},
@@ -975,7 +975,7 @@ var areas = []Province{
 			{Code: "321081", Name: "仪征市", Type: "县级市"},
 			{Code: "321084", Name: "高邮市", Type: "县级市"},
 		}},
-		{Code: "3211", Name: "镇江市", Type: "地级市", Cities: []City{
+		{Code: "3211", Name: "镇江市", Type: "地级市", Districts: []District{
 			{Code: "321102", Name: "京口区", Type: "市辖区"},
 			{Code: "321111", Name: "润州区", Type: "市辖区"},
 			{Code: "321112", Name: "丹徒区", Type: "市辖区"},
@@ -983,7 +983,7 @@ var areas = []Province{
 			{Code: "321182", Name: "扬中市", Type: "县级市"},
 			{Code: "321183", Name: "句容市", Type: "县级市"},
 		}},
-		{Code: "3212", Name: "泰州市", Type: "地级市", Cities: []City{
+		{Code: "3212", Name: "泰州市", Type: "地级市", Districts: []District{
 			{Code: "321202", Name: "海陵区", Type: "市辖区"},
 			{Code: "321203", Name: "高港区", Type: "市辖区"},
 			{Code: "321204", Name: "姜堰区", Type: "市辖区"},
@@ -991,7 +991,7 @@ var areas = []Province{
 			{Code: "321282", Name: "靖江市", Type: "县级市"},
 			{Code: "321283", Name: "泰兴市", Type: "县级市"},
 		}},
-		{Code: "3213", Name: "宿迁市", Type: "地级市", Cities: []City{
+		{Code: "3213", Name: "宿迁市", Type: "地级市", Districts: []District{
 			{Code: "321302", Name: "宿城区", Type: "市辖区"},
 			{Code: "321311", Name: "宿豫区", Type: "市辖区"},
 			{Code: "321322", Name: "沭阳县", Type: "县"},
@@ -1000,7 +1000,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "33", Name: "浙江省", Type: "省", Cities: []City{
-		{Code: "3301", Name: "杭州市", Type: "地级市", Cities: []City{
+		{Code: "3301", Name: "杭州市", Type: "地级市", Districts: []District{
 			{Code: "330102", Name: "上城区", Type: "市辖区"},
 			{Code: "330105", Name: "拱墅区", Type: "市辖区"},
 			{Code: "330106", Name: "西湖区", Type: "市辖区"},
@@ -1015,7 +1015,7 @@ var areas = []Province{
 			{Code: "330127", Name: "淳安县", Type: "县"},
 			{Code: "330182", Name: "建德市", Type: "县级市"},
 		}},
-		{Code: "3302", Name: "宁波市", Type: "地级市", Cities: []City{
+		{Code: "3302", Name: "宁波市", Type: "地级市", Districts: []District{
 			{Code: "330203", Name: "海曙区", Type: "市辖区"},
 			{Code: "330205", Name: "江北区", Type: "市辖区"},
 			{Code: "330206", Name: "北仑区", Type: "市辖区"},
@@ -1027,7 +1027,7 @@ var areas = []Province{
 			{Code: "330281", Name: "余姚市", Type: "县级市"},
 			{Code: "330282", Name: "慈溪市", Type: "县级市"},
 		}},
-		{Code: "3303", Name: "温州市", Type: "地级市", Cities: []City{
+		{Code: "3303", Name: "温州市", Type: "地级市", Districts: []District{
 			{Code: "330302", Name: "鹿城区", Type: "市辖区"},
 			{Code: "330303", Name: "龙湾区", Type: "市辖区"},
 			{Code: "330304", Name: "瓯海区", Type: "市辖区"},
@@ -1041,7 +1041,7 @@ var areas = []Province{
 			{Code: "330382", Name: "乐清市", Type: "县级市"},
 			{Code: "330383", Name: "龙港市", Type: "县级市"},
 		}},
-		{Code: "3304", Name: "嘉兴市", Type: "地级市", Cities: []City{
+		{Code: "3304", Name: "嘉兴市", Type: "地级市", Districts: []District{
 			{Code: "330402", Name: "南湖区", Type: "市辖区"},
 			{Code: "330411", Name: "秀洲区", Type: "市辖区"},
 			{Code: "330421", Name: "嘉善县", Type: "县"},
@@ -1050,14 +1050,14 @@ var areas = []Province{
 			{Code: "330482", Name: "平湖市", Type: "县级市"},
 			{Code: "330483", Name: "桐乡市", Type: "县级市"},
 		}},
-		{Code: "3305", Name: "湖州市", Type: "地级市", Cities: []City{
+		{Code: "3305", Name: "湖州市", Type: "地级市", Districts: []District{
 			{Code: "330502", Name: "吴兴区", Type: "市辖区"},
 			{Code: "330503", Name: "南浔区", Type: "市辖区"},
 			{Code: "330521", Name: "德清县", Type: "县"},
 			{Code: "330522", Name: "长兴县", Type: "县"},
 			{Code: "330523", Name: "安吉县", Type: "县"},
 		}},
-		{Code: "3306", Name: "绍兴市", Type: "地级市", Cities: []City{
+		{Code: "3306", Name: "绍兴市", Type: "地级市", Districts: []District{
 			{Code: "330602", Name: "越城区", Type: "市辖区"},
 			{Code: "330603", Name: "柯桥区", Type: "市辖区"},
 			{Code: "330604", Name: "上虞区", Type: "市辖区"},
@@ -1065,7 +1065,7 @@ var areas = []Province{
 			{Code: "330681", Name: "诸暨市", Type: "县级市"},
 			{Code: "330683", Name: "嵊州市", Type: "县级市"},
 		}},
-		{Code: "3307", Name: "金华市", Type: "地级市", Cities: []City{
+		{Code: "3307", Name: "金华市", Type: "地级市", Districts: []District{
 			{Code: "330702", Name: "婺城区", Type: "市辖区"},
 			{Code: "330703", Name: "金东区", Type: "市辖区"},
 			{Code: "330723", Name: "武义县", Type: "县"},
@@ -1076,7 +1076,7 @@ var areas = []Province{
 			{Code: "330783", Name: "东阳市", Type: "县级市"},
 			{Code: "330784", Name: "永康市", Type: "县级市"},
 		}},
-		{Code: "3308", Name: "衢州市", Type: "地级市", Cities: []City{
+		{Code: "3308", Name: "衢州市", Type: "地级市", Districts: []District{
 			{Code: "330802", Name: "柯城区", Type: "市辖区"},
 			{Code: "330803", Name: "衢江区", Type: "市辖区"},
 			{Code: "330822", Name: "常山县", Type: "县"},
@@ -1084,13 +1084,13 @@ var areas = []Province{
 			{Code: "330825", Name: "龙游县", Type: "县"},
 			{Code: "330881", Name: "江山市", Type: "县级市"},
 		}},
-		{Code: "3309", Name: "舟山市", Type: "地级市", Cities: []City{
+		{Code: "3309", Name: "舟山市", Type: "地级市", Districts: []District{
 			{Code: "330902", Name: "定海区", Type: "市辖区"},
 			{Code: "330903", Name: "普陀区", Type: "市辖区"},
 			{Code: "330921", Name: "岱山县", Type: "县"},
 			{Code: "330922", Name: "嵊泗县", Type: "县"},
 		}},
-		{Code: "3310", Name: "台州市", Type: "地级市", Cities: []City{
+		{Code: "3310", Name: "台州市", Type: "地级市", Districts: []District{
 			{Code: "331002", Name: "椒江区", Type: "市辖区"},
 			{Code: "331003", Name: "黄岩区", Type: "市辖区"},
 			{Code: "331004", Name: "路桥区", Type: "市辖区"},
@@ -1101,7 +1101,7 @@ var areas = []Province{
 			{Code: "331082", Name: "临海市", Type: "县级市"},
 			{Code: "331083", Name: "玉环市", Type: "县级市"},
 		}},
-		{Code: "3311", Name: "丽水市", Type: "地级市", Cities: []City{
+		{Code: "3311", Name: "丽水市", Type: "地级市", Districts: []District{
 			{Code: "331102", Name: "莲都区", Type: "市辖区"},
 			{Code: "331121", Name: "青田县", Type: "县"},
 			{Code: "331122", Name: "缙云县", Type: "县"},
@@ -1114,7 +1114,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "34", Name: "安徽省", Type: "省", Cities: []City{
-		{Code: "3401", Name: "合肥市", Type: "地级市", Cities: []City{
+		{Code: "3401", Name: "合肥市", Type: "地级市", Districts: []District{
 			{Code: "340102", Name: "瑶海区", Type: "市辖区"},
 			{Code: "340103", Name: "庐阳区", Type: "市辖区"},
 			{Code: "340104", Name: "蜀山区", Type: "市辖区"},
@@ -1125,7 +1125,7 @@ var areas = []Province{
 			{Code: "340124", Name: "庐江县", Type: "县"},
 			{Code: "340181", Name: "巢湖市", Type: "县级市"},
 		}},
-		{Code: "3402", Name: "芜湖市", Type: "地级市", Cities: []City{
+		{Code: "3402", Name: "芜湖市", Type: "地级市", Districts: []District{
 			{Code: "340202", Name: "镜湖区", Type: "市辖区"},
 			{Code: "340207", Name: "鸠江区", Type: "市辖区"},
 			{Code: "340209", Name: "弋江区", Type: "市辖区"},
@@ -1134,7 +1134,7 @@ var areas = []Province{
 			{Code: "340223", Name: "南陵县", Type: "县"},
 			{Code: "340281", Name: "无为市", Type: "县级市"},
 		}},
-		{Code: "3403", Name: "蚌埠市", Type: "地级市", Cities: []City{
+		{Code: "3403", Name: "蚌埠市", Type: "地级市", Districts: []District{
 			{Code: "340302", Name: "龙子湖区", Type: "市辖区"},
 			{Code: "340303", Name: "蚌山区", Type: "市辖区"},
 			{Code: "340304", Name: "禹会区", Type: "市辖区"},
@@ -1143,7 +1143,7 @@ var areas = []Province{
 			{Code: "340322", Name: "五河县", Type: "县"},
 			{Code: "340323", Name: "固镇县", Type: "县"},
 		}},
-		{Code: "3404", Name: "淮南市", Type: "地级市", Cities: []City{
+		{Code: "3404", Name: "淮南市", Type: "地级市", Districts: []District{
 			{Code: "340402", Name: "大通区", Type: "市辖区"},
 			{Code: "340403", Name: "田家庵区", Type: "市辖区"},
 			{Code: "340404", Name: "谢家集区", Type: "市辖区"},
@@ -1152,7 +1152,7 @@ var areas = []Province{
 			{Code: "340421", Name: "凤台县", Type: "县"},
 			{Code: "340422", Name: "寿县", Type: "县"},
 		}},
-		{Code: "3405", Name: "马鞍山市", Type: "地级市", Cities: []City{
+		{Code: "3405", Name: "马鞍山市", Type: "地级市", Districts: []District{
 			{Code: "340503", Name: "花山区", Type: "市辖区"},
 			{Code: "340504", Name: "雨山区", Type: "市辖区"},
 			{Code: "340506", Name: "博望区", Type: "市辖区"},
@@ -1160,19 +1160,19 @@ var areas = []Province{
 			{Code: "340522", Name: "含山县", Type: "县"},
 			{Code: "340523", Name: "和县", Type: "县"},
 		}},
-		{Code: "3406", Name: "淮北市", Type: "地级市", Cities: []City{
+		{Code: "3406", Name: "淮北市", Type: "地级市", Districts: []District{
 			{Code: "340602", Name: "杜集区", Type: "市辖区"},
 			{Code: "340603", Name: "相山区", Type: "市辖区"},
 			{Code: "340604", Name: "烈山区", Type: "市辖区"},
 			{Code: "340621", Name: "濉溪县", Type: "县"},
 		}},
-		{Code: "3407", Name: "铜陵市", Type: "地级市", Cities: []City{
+		{Code: "3407", Name: "铜陵市", Type: "地级市", Districts: []District{
 			{Code: "340705", Name: "铜官区", Type: "市辖区"},
 			{Code: "340706", Name: "义安区", Type: "市辖区"},
 			{Code: "340711", Name: "郊区", Type: "市辖区"},
 			{Code: "340722", Name: "枞阳县", Type: "县"},
 		}},
-		{Code: "3408", Name: "安庆市", Type: "地级市", Cities: []City{
+		{Code: "3408", Name: "安庆市", Type: "地级市", Districts: []District{
 			{Code: "340802", Name: "迎江区", Type: "市辖区"},
 			{Code: "340803", Name: "大观区", Type: "市辖区"},
 			{Code: "340811", Name: "宜秀区", Type: "市辖区"},
@@ -1184,7 +1184,7 @@ var areas = []Province{
 			{Code: "340881", Name: "桐城市", Type: "县级市"},
 			{Code: "340882", Name: "潜山市", Type: "县级市"},
 		}},
-		{Code: "3410", Name: "黄山市", Type: "地级市", Cities: []City{
+		{Code: "3410", Name: "黄山市", Type: "地级市", Districts: []District{
 			{Code: "341002", Name: "屯溪区", Type: "市辖区"},
 			{Code: "341003", Name: "黄山区", Type: "市辖区"},
 			{Code: "341004", Name: "徽州区", Type: "市辖区"},
@@ -1193,7 +1193,7 @@ var areas = []Province{
 			{Code: "341023", Name: "黟县", Type: "县"},
 			{Code: "341024", Name: "祁门县", Type: "县"},
 		}},
-		{Code: "3411", Name: "滁州市", Type: "地级市", Cities: []City{
+		{Code: "3411", Name: "滁州市", Type: "地级市", Districts: []District{
 			{Code: "341102", Name: "琅琊区", Type: "市辖区"},
 			{Code: "341103", Name: "南谯区", Type: "市辖区"},
 			{Code: "341122", Name: "来安县", Type: "县"},
@@ -1203,7 +1203,7 @@ var areas = []Province{
 			{Code: "341181", Name: "天长市", Type: "县级市"},
 			{Code: "341182", Name: "明光市", Type: "县级市"},
 		}},
-		{Code: "3412", Name: "阜阳市", Type: "地级市", Cities: []City{
+		{Code: "3412", Name: "阜阳市", Type: "地级市", Districts: []District{
 			{Code: "341202", Name: "颍州区", Type: "市辖区"},
 			{Code: "341203", Name: "颍东区", Type: "市辖区"},
 			{Code: "341204", Name: "颍泉区", Type: "市辖区"},
@@ -1213,14 +1213,14 @@ var areas = []Province{
 			{Code: "341226", Name: "颍上县", Type: "县"},
 			{Code: "341282", Name: "界首市", Type: "县级市"},
 		}},
-		{Code: "3413", Name: "宿州市", Type: "地级市", Cities: []City{
+		{Code: "3413", Name: "宿州市", Type: "地级市", Districts: []District{
 			{Code: "341302", Name: "埇桥区", Type: "市辖区"},
 			{Code: "341321", Name: "砀山县", Type: "县"},
 			{Code: "341322", Name: "萧县", Type: "县"},
 			{Code: "341323", Name: "灵璧县", Type: "县"},
 			{Code: "341324", Name: "泗县", Type: "县"},
 		}},
-		{Code: "3415", Name: "六安市", Type: "地级市", Cities: []City{
+		{Code: "3415", Name: "六安市", Type: "地级市", Districts: []District{
 			{Code: "341502", Name: "金安区", Type: "市辖区"},
 			{Code: "341503", Name: "裕安区", Type: "市辖区"},
 			{Code: "341504", Name: "叶集区", Type: "市辖区"},
@@ -1229,19 +1229,19 @@ var areas = []Province{
 			{Code: "341524", Name: "金寨县", Type: "县"},
 			{Code: "341525", Name: "霍山县", Type: "县"},
 		}},
-		{Code: "3416", Name: "亳州市", Type: "地级市", Cities: []City{
+		{Code: "3416", Name: "亳州市", Type: "地级市", Districts: []District{
 			{Code: "341602", Name: "谯城区", Type: "市辖区"},
 			{Code: "341621", Name: "涡阳县", Type: "县"},
 			{Code: "341622", Name: "蒙城县", Type: "县"},
 			{Code: "341623", Name: "利辛县", Type: "县"},
 		}},
-		{Code: "3417", Name: "池州市", Type: "地级市", Cities: []City{
+		{Code: "3417", Name: "池州市", Type: "地级市", Districts: []District{
 			{Code: "341702", Name: "贵池区", Type: "市辖区"},
 			{Code: "341721", Name: "东至县", Type: "县"},
 			{Code: "341722", Name: "石台县", Type: "县"},
 			{Code: "341723", Name: "青阳县", Type: "县"},
 		}},
-		{Code: "3418", Name: "宣城市", Type: "地级市", Cities: []City{
+		{Code: "3418", Name: "宣城市", Type: "地级市", Districts: []District{
 			{Code: "341802", Name: "宣州区", Type: "市辖区"},
 			{Code: "341821", Name: "郎溪县", Type: "县"},
 			{Code: "341823", Name: "泾县", Type: "县"},
@@ -1252,7 +1252,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "35", Name: "福建省", Type: "省", Cities: []City{
-		{Code: "3501", Name: "福州市", Type: "地级市", Cities: []City{
+		{Code: "3501", Name: "福州市", Type: "地级市", Districts: []District{
 			{Code: "350102", Name: "鼓楼区", Type: "市辖区"},
 			{Code: "350103", Name: "台江区", Type: "市辖区"},
 			{Code: "350104", Name: "仓山区", Type: "市辖区"},
@@ -1267,7 +1267,7 @@ var areas = []Province{
 			{Code: "350128", Name: "平潭县", Type: "县"},
 			{Code: "350181", Name: "福清市", Type: "县级市"},
 		}},
-		{Code: "3502", Name: "厦门市", Type: "地级市", Cities: []City{
+		{Code: "3502", Name: "厦门市", Type: "地级市", Districts: []District{
 			{Code: "350203", Name: "思明区", Type: "市辖区"},
 			{Code: "350205", Name: "海沧区", Type: "市辖区"},
 			{Code: "350206", Name: "湖里区", Type: "市辖区"},
@@ -1275,14 +1275,14 @@ var areas = []Province{
 			{Code: "350212", Name: "同安区", Type: "市辖区"},
 			{Code: "350213", Name: "翔安区", Type: "市辖区"},
 		}},
-		{Code: "3503", Name: "莆田市", Type: "地级市", Cities: []City{
+		{Code: "3503", Name: "莆田市", Type: "地级市", Districts: []District{
 			{Code: "350302", Name: "城厢区", Type: "市辖区"},
 			{Code: "350303", Name: "涵江区", Type: "市辖区"},
 			{Code: "350304", Name: "荔城区", Type: "市辖区"},
 			{Code: "350305", Name: "秀屿区", Type: "市辖区"},
 			{Code: "350322", Name: "仙游县", Type: "县"},
 		}},
-		{Code: "3504", Name: "三明市", Type: "地级市", Cities: []City{
+		{Code: "3504", Name: "三明市", Type: "地级市", Districts: []District{
 			{Code: "350404", Name: "三元区", Type: "市辖区"},
 			{Code: "350405", Name: "沙县区", Type: "市辖区"},
 			{Code: "350421", Name: "明溪县", Type: "县"},
@@ -1295,7 +1295,7 @@ var areas = []Province{
 			{Code: "350430", Name: "建宁县", Type: "县"},
 			{Code: "350481", Name: "永安市", Type: "县级市"},
 		}},
-		{Code: "3505", Name: "泉州市", Type: "地级市", Cities: []City{
+		{Code: "3505", Name: "泉州市", Type: "地级市", Districts: []District{
 			{Code: "350502", Name: "鲤城区", Type: "市辖区"},
 			{Code: "350503", Name: "丰泽区", Type: "市辖区"},
 			{Code: "350504", Name: "洛江区", Type: "市辖区"},
@@ -1309,7 +1309,7 @@ var areas = []Province{
 			{Code: "350582", Name: "晋江市", Type: "县级市"},
 			{Code: "350583", Name: "南安市", Type: "县级市"},
 		}},
-		{Code: "3506", Name: "漳州市", Type: "地级市", Cities: []City{
+		{Code: "3506", Name: "漳州市", Type: "地级市", Districts: []District{
 			{Code: "350602", Name: "芗城区", Type: "市辖区"},
 			{Code: "350603", Name: "龙文区", Type: "市辖区"},
 			{Code: "350604", Name: "龙海区", Type: "市辖区"},
@@ -1322,7 +1322,7 @@ var areas = []Province{
 			{Code: "350628", Name: "平和县", Type: "县"},
 			{Code: "350629", Name: "华安县", Type: "县"},
 		}},
-		{Code: "3507", Name: "南平市", Type: "地级市", Cities: []City{
+		{Code: "3507", Name: "南平市", Type: "地级市", Districts: []District{
 			{Code: "350702", Name: "延平区", Type: "市辖区"},
 			{Code: "350703", Name: "建阳区", Type: "市辖区"},
 			{Code: "350721", Name: "顺昌县", Type: "县"},
@@ -1334,7 +1334,7 @@ var areas = []Province{
 			{Code: "350782", Name: "武夷山市", Type: "县级市"},
 			{Code: "350783", Name: "建瓯市", Type: "县级市"},
 		}},
-		{Code: "3508", Name: "龙岩市", Type: "地级市", Cities: []City{
+		{Code: "3508", Name: "龙岩市", Type: "地级市", Districts: []District{
 			{Code: "350802", Name: "新罗区", Type: "市辖区"},
 			{Code: "350803", Name: "永定区", Type: "市辖区"},
 			{Code: "350821", Name: "长汀县", Type: "县"},
@@ -1343,7 +1343,7 @@ var areas = []Province{
 			{Code: "350825", Name: "连城县", Type: "县"},
 			{Code: "350881", Name: "漳平市", Type: "县级市"},
 		}},
-		{Code: "3509", Name: "宁德市", Type: "地级市", Cities: []City{
+		{Code: "3509", Name: "宁德市", Type: "地级市", Districts: []District{
 			{Code: "350902", Name: "蕉城区", Type: "市辖区"},
 			{Code: "350921", Name: "霞浦县", Type: "县"},
 			{Code: "350922", Name: "古田县", Type: "县"},
@@ -1356,7 +1356,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "36", Name: "江西省", Type: "省", Cities: []City{
-		{Code: "3601", Name: "南昌市", Type: "地级市", Cities: []City{
+		{Code: "3601", Name: "南昌市", Type: "地级市", Districts: []District{
 			{Code: "360102", Name: "东湖区", Type: "市辖区"},
 			{Code: "360103", Name: "西湖区", Type: "市辖区"},
 			{Code: "360104", Name: "青云谱区", Type: "市辖区"},
@@ -1367,20 +1367,20 @@ var areas = []Province{
 			{Code: "360123", Name: "安义县", Type: "县"},
 			{Code: "360124", Name: "进贤县", Type: "县"},
 		}},
-		{Code: "3602", Name: "景德镇市", Type: "地级市", Cities: []City{
+		{Code: "3602", Name: "景德镇市", Type: "地级市", Districts: []District{
 			{Code: "360202", Name: "昌江区", Type: "市辖区"},
 			{Code: "360203", Name: "珠山区", Type: "市辖区"},
 			{Code: "360222", Name: "浮梁县", Type: "县"},
 			{Code: "360281", Name: "乐平市", Type: "县级市"},
 		}},
-		{Code: "3603", Name: "萍乡市", Type: "地级市", Cities: []City{
+		{Code: "3603", Name: "萍乡市", Type: "地级市", Districts: []District{
 			{Code: "360302", Name: "安源区", Type: "市辖区"},
 			{Code: "360313", Name: "湘东区", Type: "市辖区"},
 			{Code: "360321", Name: "莲花县", Type: "县"},
 			{Code: "360322", Name: "上栗县", Type: "县"},
 			{Code: "360323", Name: "芦溪县", Type: "县"},
 		}},
-		{Code: "3604", Name: "九江市", Type: "地级市", Cities: []City{
+		{Code: "3604", Name: "九江市", Type: "地级市", Districts: []District{
 			{Code: "360402", Name: "濂溪区", Type: "市辖区"},
 			{Code: "360403", Name: "浔阳区", Type: "市辖区"},
 			{Code: "360404", Name: "柴桑区", Type: "市辖区"},
@@ -1395,16 +1395,16 @@ var areas = []Province{
 			{Code: "360482", Name: "共青城市", Type: "县级市"},
 			{Code: "360483", Name: "庐山市", Type: "县级市"},
 		}},
-		{Code: "3605", Name: "新余市", Type: "地级市", Cities: []City{
+		{Code: "3605", Name: "新余市", Type: "地级市", Districts: []District{
 			{Code: "360502", Name: "渝水区", Type: "市辖区"},
 			{Code: "360521", Name: "分宜县", Type: "县"},
 		}},
-		{Code: "3606", Name: "鹰潭市", Type: "地级市", Cities: []City{
+		{Code: "3606", Name: "鹰潭市", Type: "地级市", Districts: []District{
 			{Code: "360602", Name: "月湖区", Type: "市辖区"},
 			{Code: "360603", Name: "余江区", Type: "市辖区"},
 			{Code: "360681", Name: "贵溪市", Type: "县级市"},
 		}},
-		{Code: "3607", Name: "赣州市", Type: "地级市", Cities: []City{
+		{Code: "3607", Name: "赣州市", Type: "地级市", Districts: []District{
 			{Code: "360702", Name: "章贡区", Type: "市辖区"},
 			{Code: "360703", Name: "南康区", Type: "市辖区"},
 			{Code: "360704", Name: "赣县区", Type: "市辖区"},
@@ -1424,7 +1424,7 @@ var areas = []Province{
 			{Code: "360781", Name: "瑞金市", Type: "县级市"},
 			{Code: "360783", Name: "龙南市", Type: "县级市"},
 		}},
-		{Code: "3608", Name: "吉安市", Type: "地级市", Cities: []City{
+		{Code: "3608", Name: "吉安市", Type: "地级市", Districts: []District{
 			{Code: "360802", Name: "吉州区", Type: "市辖区"},
 			{Code: "360803", Name: "青原区", Type: "市辖区"},
 			{Code: "360821", Name: "吉安县", Type: "县"},
@@ -1439,7 +1439,7 @@ var areas = []Province{
 			{Code: "360830", Name: "永新县", Type: "县"},
 			{Code: "360881", Name: "井冈山市", Type: "县级市"},
 		}},
-		{Code: "3609", Name: "宜春市", Type: "地级市", Cities: []City{
+		{Code: "3609", Name: "宜春市", Type: "地级市", Districts: []District{
 			{Code: "360902", Name: "袁州区", Type: "市辖区"},
 			{Code: "360921", Name: "奉新县", Type: "县"},
 			{Code: "360922", Name: "万载县", Type: "县"},
@@ -1451,7 +1451,7 @@ var areas = []Province{
 			{Code: "360982", Name: "樟树市", Type: "县级市"},
 			{Code: "360983", Name: "高安市", Type: "县级市"},
 		}},
-		{Code: "3610", Name: "抚州市", Type: "地级市", Cities: []City{
+		{Code: "3610", Name: "抚州市", Type: "地级市", Districts: []District{
 			{Code: "361002", Name: "临川区", Type: "市辖区"},
 			{Code: "361003", Name: "东乡区", Type: "市辖区"},
 			{Code: "361021", Name: "南城县", Type: "县"},
@@ -1464,7 +1464,7 @@ var areas = []Province{
 			{Code: "361028", Name: "资溪县", Type: "县"},
 			{Code: "361030", Name: "广昌县", Type: "县"},
 		}},
-		{Code: "3611", Name: "上饶市", Type: "地级市", Cities: []City{
+		{Code: "3611", Name: "上饶市", Type: "地级市", Districts: []District{
 			{Code: "361102", Name: "信州区", Type: "市辖区"},
 			{Code: "361103", Name: "广丰区", Type: "市辖区"},
 			{Code: "361104", Name: "广信区", Type: "市辖区"},
@@ -1480,7 +1480,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "37", Name: "山东省", Type: "省", Cities: []City{
-		{Code: "3701", Name: "济南市", Type: "地级市", Cities: []City{
+		{Code: "3701", Name: "济南市", Type: "地级市", Districts: []District{
 			{Code: "370102", Name: "历下区", Type: "市辖区"},
 			{Code: "370103", Name: "市中区", Type: "市辖区"},
 			{Code: "370104", Name: "槐荫区", Type: "市辖区"},
@@ -1494,7 +1494,7 @@ var areas = []Province{
 			{Code: "370124", Name: "平阴县", Type: "县"},
 			{Code: "370126", Name: "商河县", Type: "县"},
 		}},
-		{Code: "3702", Name: "青岛市", Type: "地级市", Cities: []City{
+		{Code: "3702", Name: "青岛市", Type: "地级市", Districts: []District{
 			{Code: "370202", Name: "市南区", Type: "市辖区"},
 			{Code: "370203", Name: "市北区", Type: "市辖区"},
 			{Code: "370211", Name: "黄岛区", Type: "市辖区"},
@@ -1506,7 +1506,7 @@ var areas = []Province{
 			{Code: "370283", Name: "平度市", Type: "县级市"},
 			{Code: "370285", Name: "莱西市", Type: "县级市"},
 		}},
-		{Code: "3703", Name: "淄博市", Type: "地级市", Cities: []City{
+		{Code: "3703", Name: "淄博市", Type: "地级市", Districts: []District{
 			{Code: "370302", Name: "淄川区", Type: "市辖区"},
 			{Code: "370303", Name: "张店区", Type: "市辖区"},
 			{Code: "370304", Name: "博山区", Type: "市辖区"},
@@ -1516,7 +1516,7 @@ var areas = []Province{
 			{Code: "370322", Name: "高青县", Type: "县"},
 			{Code: "370323", Name: "沂源县", Type: "县"},
 		}},
-		{Code: "3704", Name: "枣庄市", Type: "地级市", Cities: []City{
+		{Code: "3704", Name: "枣庄市", Type: "地级市", Districts: []District{
 			{Code: "370402", Name: "市中区", Type: "市辖区"},
 			{Code: "370403", Name: "薛城区", Type: "市辖区"},
 			{Code: "370404", Name: "峄城区", Type: "市辖区"},
@@ -1524,14 +1524,14 @@ var areas = []Province{
 			{Code: "370406", Name: "山亭区", Type: "市辖区"},
 			{Code: "370481", Name: "滕州市", Type: "县级市"},
 		}},
-		{Code: "3705", Name: "东营市", Type: "地级市", Cities: []City{
+		{Code: "3705", Name: "东营市", Type: "地级市", Districts: []District{
 			{Code: "370502", Name: "东营区", Type: "市辖区"},
 			{Code: "370503", Name: "河口区", Type: "市辖区"},
 			{Code: "370505", Name: "垦利区", Type: "市辖区"},
 			{Code: "370522", Name: "利津县", Type: "县"},
 			{Code: "370523", Name: "广饶县", Type: "县"},
 		}},
-		{Code: "3706", Name: "烟台市", Type: "地级市", Cities: []City{
+		{Code: "3706", Name: "烟台市", Type: "地级市", Districts: []District{
 			{Code: "370602", Name: "芝罘区", Type: "市辖区"},
 			{Code: "370611", Name: "福山区", Type: "市辖区"},
 			{Code: "370612", Name: "牟平区", Type: "市辖区"},
@@ -1544,7 +1544,7 @@ var areas = []Province{
 			{Code: "370686", Name: "栖霞市", Type: "县级市"},
 			{Code: "370687", Name: "海阳市", Type: "县级市"},
 		}},
-		{Code: "3707", Name: "潍坊市", Type: "地级市", Cities: []City{
+		{Code: "3707", Name: "潍坊市", Type: "地级市", Districts: []District{
 			{Code: "370702", Name: "潍城区", Type: "市辖区"},
 			{Code: "370703", Name: "寒亭区", Type: "市辖区"},
 			{Code: "370704", Name: "坊子区", Type: "市辖区"},
@@ -1558,7 +1558,7 @@ var areas = []Province{
 			{Code: "370785", Name: "高密市", Type: "县级市"},
 			{Code: "370786", Name: "昌邑市", Type: "县级市"},
 		}},
-		{Code: "3708", Name: "济宁市", Type: "地级市", Cities: []City{
+		{Code: "3708", Name: "济宁市", Type: "地级市", Districts: []District{
 			{Code: "370811", Name: "任城区", Type: "市辖区"},
 			{Code: "370812", Name: "兖州区", Type: "市辖区"},
 			{Code: "370826", Name: "微山县", Type: "县"},
@@ -1571,7 +1571,7 @@ var areas = []Province{
 			{Code: "370881", Name: "曲阜市", Type: "县级市"},
 			{Code: "370883", Name: "邹城市", Type: "县级市"},
 		}},
-		{Code: "3709", Name: "泰安市", Type: "地级市", Cities: []City{
+		{Code: "3709", Name: "泰安市", Type: "地级市", Districts: []District{
 			{Code: "370902", Name: "泰山区", Type: "市辖区"},
 			{Code: "370911", Name: "岱岳区", Type: "市辖区"},
 			{Code: "370921", Name: "宁阳县", Type: "县"},
@@ -1579,19 +1579,19 @@ var areas = []Province{
 			{Code: "370982", Name: "新泰市", Type: "县级市"},
 			{Code: "370983", Name: "肥城市", Type: "县级市"},
 		}},
-		{Code: "3710", Name: "威海市", Type: "地级市", Cities: []City{
+		{Code: "3710", Name: "威海市", Type: "地级市", Districts: []District{
 			{Code: "371002", Name: "环翠区", Type: "市辖区"},
 			{Code: "371003", Name: "文登区", Type: "市辖区"},
 			{Code: "371082", Name: "荣成市", Type: "县级市"},
 			{Code: "371083", Name: "乳山市", Type: "县级市"},
 		}},
-		{Code: "3711", Name: "日照市", Type: "地级市", Cities: []City{
+		{Code: "3711", Name: "日照市", Type: "地级市", Districts: []District{
 			{Code: "371102", Name: "东港区", Type: "市辖区"},
 			{Code: "371103", Name: "岚山区", Type: "市辖区"},
 			{Code: "371121", Name: "五莲县", Type: "县"},
 			{Code: "371122", Name: "莒县", Type: "县"},
 		}},
-		{Code: "3713", Name: "临沂市", Type: "地级市", Cities: []City{
+		{Code: "3713", Name: "临沂市", Type: "地级市", Districts: []District{
 			{Code: "371302", Name: "兰山区", Type: "市辖区"},
 			{Code: "371311", Name: "罗庄区", Type: "市辖区"},
 			{Code: "371312", Name: "河东区", Type: "市辖区"},
@@ -1605,7 +1605,7 @@ var areas = []Province{
 			{Code: "371328", Name: "蒙阴县", Type: "县"},
 			{Code: "371329", Name: "临沭县", Type: "县"},
 		}},
-		{Code: "3714", Name: "德州市", Type: "地级市", Cities: []City{
+		{Code: "3714", Name: "德州市", Type: "地级市", Districts: []District{
 			{Code: "371402", Name: "德城区", Type: "市辖区"},
 			{Code: "371403", Name: "陵城区", Type: "市辖区"},
 			{Code: "371422", Name: "宁津县", Type: "县"},
@@ -1618,7 +1618,7 @@ var areas = []Province{
 			{Code: "371481", Name: "乐陵市", Type: "县级市"},
 			{Code: "371482", Name: "禹城市", Type: "县级市"},
 		}},
-		{Code: "3715", Name: "聊城市", Type: "地级市", Cities: []City{
+		{Code: "3715", Name: "聊城市", Type: "地级市", Districts: []District{
 			{Code: "371502", Name: "东昌府区", Type: "市辖区"},
 			{Code: "371503", Name: "茌平区", Type: "市辖区"},
 			{Code: "371521", Name: "阳谷县", Type: "县"},
@@ -1628,7 +1628,7 @@ var areas = []Province{
 			{Code: "371526", Name: "高唐县", Type: "县"},
 			{Code: "371581", Name: "临清市", Type: "县级市"},
 		}},
-		{Code: "3716", Name: "滨州市", Type: "地级市", Cities: []City{
+		{Code: "3716", Name: "滨州市", Type: "地级市", Districts: []District{
 			{Code: "371602", Name: "滨城区", Type: "市辖区"},
 			{Code: "371603", Name: "沾化区", Type: "市辖区"},
 			{Code: "371621", Name: "惠民县", Type: "县"},
@@ -1637,7 +1637,7 @@ var areas = []Province{
 			{Code: "371625", Name: "博兴县", Type: "县"},
 			{Code: "371681", Name: "邹平市", Type: "县级市"},
 		}},
-		{Code: "3717", Name: "菏泽市", Type: "地级市", Cities: []City{
+		{Code: "3717", Name: "菏泽市", Type: "地级市", Districts: []District{
 			{Code: "371702", Name: "牡丹区", Type: "市辖区"},
 			{Code: "371703", Name: "定陶区", Type: "市辖区"},
 			{Code: "371721", Name: "曹县", Type: "县"},
@@ -1650,7 +1650,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "41", Name: "河南省", Type: "省", Cities: []City{
-		{Code: "4101", Name: "郑州市", Type: "地级市", Cities: []City{
+		{Code: "4101", Name: "郑州市", Type: "地级市", Districts: []District{
 			{Code: "410102", Name: "中原区", Type: "市辖区"},
 			{Code: "410103", Name: "二七区", Type: "市辖区"},
 			{Code: "410104", Name: "管城回族区", Type: "市辖区"},
@@ -1664,7 +1664,7 @@ var areas = []Province{
 			{Code: "410184", Name: "新郑市", Type: "县级市"},
 			{Code: "410185", Name: "登封市", Type: "县级市"},
 		}},
-		{Code: "4102", Name: "开封市", Type: "地级市", Cities: []City{
+		{Code: "4102", Name: "开封市", Type: "地级市", Districts: []District{
 			{Code: "410202", Name: "龙亭区", Type: "市辖区"},
 			{Code: "410203", Name: "顺河回族区", Type: "市辖区"},
 			{Code: "410204", Name: "鼓楼区", Type: "市辖区"},
@@ -1675,7 +1675,7 @@ var areas = []Province{
 			{Code: "410223", Name: "尉氏县", Type: "县"},
 			{Code: "410225", Name: "兰考县", Type: "县"},
 		}},
-		{Code: "4103", Name: "洛阳市", Type: "地级市", Cities: []City{
+		{Code: "4103", Name: "洛阳市", Type: "地级市", Districts: []District{
 			{Code: "410302", Name: "老城区", Type: "市辖区"},
 			{Code: "410303", Name: "西工区", Type: "市辖区"},
 			{Code: "410304", Name: "瀍河回族区", Type: "市辖区"},
@@ -1691,7 +1691,7 @@ var areas = []Province{
 			{Code: "410328", Name: "洛宁县", Type: "县"},
 			{Code: "410329", Name: "伊川县", Type: "县"},
 		}},
-		{Code: "4104", Name: "平顶山市", Type: "地级市", Cities: []City{
+		{Code: "4104", Name: "平顶山市", Type: "地级市", Districts: []District{
 			{Code: "410402", Name: "新华区", Type: "市辖区"},
 			{Code: "410403", Name: "卫东区", Type: "市辖区"},
 			{Code: "410404", Name: "石龙区", Type: "市辖区"},
@@ -1703,7 +1703,7 @@ var areas = []Province{
 			{Code: "410481", Name: "舞钢市", Type: "县级市"},
 			{Code: "410482", Name: "汝州市", Type: "县级市"},
 		}},
-		{Code: "4105", Name: "安阳市", Type: "地级市", Cities: []City{
+		{Code: "4105", Name: "安阳市", Type: "地级市", Districts: []District{
 			{Code: "410502", Name: "文峰区", Type: "市辖区"},
 			{Code: "410503", Name: "北关区", Type: "市辖区"},
 			{Code: "410505", Name: "殷都区", Type: "市辖区"},
@@ -1714,14 +1714,14 @@ var areas = []Province{
 			{Code: "410527", Name: "内黄县", Type: "县"},
 			{Code: "410581", Name: "林州市", Type: "县级市"},
 		}},
-		{Code: "4106", Name: "鹤壁市", Type: "地级市", Cities: []City{
+		{Code: "4106", Name: "鹤壁市", Type: "地级市", Districts: []District{
 			{Code: "410602", Name: "鹤山区", Type: "市辖区"},
 			{Code: "410603", Name: "山城区", Type: "市辖区"},
 			{Code: "410611", Name: "淇滨区", Type: "市辖区"},
 			{Code: "410621", Name: "浚县", Type: "县"},
 			{Code: "410622", Name: "淇县", Type: "县"},
 		}},
-		{Code: "4107", Name: "新乡市", Type: "地级市", Cities: []City{
+		{Code: "4107", Name: "新乡市", Type: "地级市", Districts: []District{
 			{Code: "410702", Name: "红旗区", Type: "市辖区"},
 			{Code: "410703", Name: "卫滨区", Type: "市辖区"},
 			{Code: "410704", Name: "凤泉区", Type: "市辖区"},
@@ -1735,7 +1735,7 @@ var areas = []Province{
 			{Code: "410782", Name: "辉县市", Type: "县级市"},
 			{Code: "410783", Name: "长垣市", Type: "县级市"},
 		}},
-		{Code: "4108", Name: "焦作市", Type: "地级市", Cities: []City{
+		{Code: "4108", Name: "焦作市", Type: "地级市", Districts: []District{
 			{Code: "410802", Name: "解放区", Type: "市辖区"},
 			{Code: "410803", Name: "中站区", Type: "市辖区"},
 			{Code: "410804", Name: "马村区", Type: "市辖区"},
@@ -1747,7 +1747,7 @@ var areas = []Province{
 			{Code: "410882", Name: "沁阳市", Type: "县级市"},
 			{Code: "410883", Name: "孟州市", Type: "县级市"},
 		}},
-		{Code: "4109", Name: "濮阳市", Type: "地级市", Cities: []City{
+		{Code: "4109", Name: "濮阳市", Type: "地级市", Districts: []District{
 			{Code: "410902", Name: "华龙区", Type: "市辖区"},
 			{Code: "410922", Name: "清丰县", Type: "县"},
 			{Code: "410923", Name: "南乐县", Type: "县"},
@@ -1755,7 +1755,7 @@ var areas = []Province{
 			{Code: "410927", Name: "台前县", Type: "县"},
 			{Code: "410928", Name: "濮阳县", Type: "县"},
 		}},
-		{Code: "4110", Name: "许昌市", Type: "地级市", Cities: []City{
+		{Code: "4110", Name: "许昌市", Type: "地级市", Districts: []District{
 			{Code: "411002", Name: "魏都区", Type: "市辖区"},
 			{Code: "411003", Name: "建安区", Type: "市辖区"},
 			{Code: "411024", Name: "鄢陵县", Type: "县"},
@@ -1763,14 +1763,14 @@ var areas = []Province{
 			{Code: "411081", Name: "禹州市", Type: "县级市"},
 			{Code: "411082", Name: "长葛市", Type: "县级市"},
 		}},
-		{Code: "4111", Name: "漯河市", Type: "地级市", Cities: []City{
+		{Code: "4111", Name: "漯河市", Type: "地级市", Districts: []District{
 			{Code: "411102", Name: "源汇区", Type: "市辖区"},
 			{Code: "411103", Name: "郾城区", Type: "市辖区"},
 			{Code: "411104", Name: "召陵区", Type: "市辖区"},
 			{Code: "411121", Name: "舞阳县", Type: "县"},
 			{Code: "411122", Name: "临颍县", Type: "县"},
 		}},
-		{Code: "4112", Name: "三门峡市", Type: "地级市", Cities: []City{
+		{Code: "4112", Name: "三门峡市", Type: "地级市", Districts: []District{
 			{Code: "411202", Name: "湖滨区", Type: "市辖区"},
 			{Code: "411203", Name: "陕州区", Type: "市辖区"},
 			{Code: "411221", Name: "渑池县", Type: "县"},
@@ -1778,7 +1778,7 @@ var areas = []Province{
 			{Code: "411281", Name: "义马市", Type: "县级市"},
 			{Code: "411282", Name: "灵宝市", Type: "县级市"},
 		}},
-		{Code: "4113", Name: "南阳市", Type: "地级市", Cities: []City{
+		{Code: "4113", Name: "南阳市", Type: "地级市", Districts: []District{
 			{Code: "411302", Name: "宛城区", Type: "市辖区"},
 			{Code: "411303", Name: "卧龙区", Type: "市辖区"},
 			{Code: "411321", Name: "南召县", Type: "县"},
@@ -1793,7 +1793,7 @@ var areas = []Province{
 			{Code: "411330", Name: "桐柏县", Type: "县"},
 			{Code: "411381", Name: "邓州市", Type: "县级市"},
 		}},
-		{Code: "4114", Name: "商丘市", Type: "地级市", Cities: []City{
+		{Code: "4114", Name: "商丘市", Type: "地级市", Districts: []District{
 			{Code: "411402", Name: "梁园区", Type: "市辖区"},
 			{Code: "411403", Name: "睢阳区", Type: "市辖区"},
 			{Code: "411421", Name: "民权县", Type: "县"},
@@ -1804,7 +1804,7 @@ var areas = []Province{
 			{Code: "411426", Name: "夏邑县", Type: "县"},
 			{Code: "411481", Name: "永城市", Type: "县级市"},
 		}},
-		{Code: "4115", Name: "信阳市", Type: "地级市", Cities: []City{
+		{Code: "4115", Name: "信阳市", Type: "地级市", Districts: []District{
 			{Code: "411502", Name: "浉河区", Type: "市辖区"},
 			{Code: "411503", Name: "平桥区", Type: "市辖区"},
 			{Code: "411521", Name: "罗山县", Type: "县"},
@@ -1816,7 +1816,7 @@ var areas = []Province{
 			{Code: "411527", Name: "淮滨县", Type: "县"},
 			{Code: "411528", Name: "息县", Type: "县"},
 		}},
-		{Code: "4116", Name: "周口市", Type: "地级市", Cities: []City{
+		{Code: "4116", Name: "周口市", Type: "地级市", Districts: []District{
 			{Code: "411602", Name: "川汇区", Type: "市辖区"},
 			{Code: "411603", Name: "淮阳区", Type: "市辖区"},
 			{Code: "411621", Name: "扶沟县", Type: "县"},
@@ -1828,7 +1828,7 @@ var areas = []Province{
 			{Code: "411628", Name: "鹿邑县", Type: "县"},
 			{Code: "411681", Name: "项城市", Type: "县级市"},
 		}},
-		{Code: "4117", Name: "驻马店市", Type: "地级市", Cities: []City{
+		{Code: "4117", Name: "驻马店市", Type: "地级市", Districts: []District{
 			{Code: "411702", Name: "驿城区", Type: "市辖区"},
 			{Code: "411721", Name: "西平县", Type: "县"},
 			{Code: "411722", Name: "上蔡县", Type: "县"},
@@ -1843,7 +1843,7 @@ var areas = []Province{
 		{Code: "419001", Name: "济源市", Type: "县级市"},
 	}},
 	{Code: "42", Name: "湖北省", Type: "省", Cities: []City{
-		{Code: "4201", Name: "武汉市", Type: "地级市", Cities: []City{
+		{Code: "4201", Name: "武汉市", Type: "地级市", Districts: []District{
 			{Code: "420102", Name: "江岸区", Type: "市辖区"},
 			{Code: "420103", Name: "江汉区", Type: "市辖区"},
 			{Code: "420104", Name: "硚口区", Type: "市辖区"},
@@ -1858,7 +1858,7 @@ var areas = []Province{
 			{Code: "420116", Name: "黄陂区", Type: "市辖区"},
 			{Code: "420117", Name: "新洲区", Type: "市辖区"},
 		}},
-		{Code: "4202", Name: "黄石市", Type: "地级市", Cities: []City{
+		{Code: "4202", Name: "黄石市", Type: "地级市", Districts: []District{
 			{Code: "420202", Name: "黄石港区", Type: "市辖区"},
 			{Code: "420203", Name: "西塞山区", Type: "市辖区"},
 			{Code: "420204", Name: "下陆区", Type: "市辖区"},
@@ -1866,7 +1866,7 @@ var areas = []Province{
 			{Code: "420222", Name: "阳新县", Type: "县"},
 			{Code: "420281", Name: "大冶市", Type: "县级市"},
 		}},
-		{Code: "4203", Name: "十堰市", Type: "地级市", Cities: []City{
+		{Code: "4203", Name: "十堰市", Type: "地级市", Districts: []District{
 			{Code: "420302", Name: "茅箭区", Type: "市辖区"},
 			{Code: "420303", Name: "张湾区", Type: "市辖区"},
 			{Code: "420304", Name: "郧阳区", Type: "市辖区"},
@@ -1876,7 +1876,7 @@ var areas = []Province{
 			{Code: "420325", Name: "房县", Type: "县"},
 			{Code: "420381", Name: "丹江口市", Type: "县级市"},
 		}},
-		{Code: "4205", Name: "宜昌市", Type: "地级市", Cities: []City{
+		{Code: "4205", Name: "宜昌市", Type: "地级市", Districts: []District{
 			{Code: "420502", Name: "西陵区", Type: "市辖区"},
 			{Code: "420503", Name: "伍家岗区", Type: "市辖区"},
 			{Code: "420504", Name: "点军区", Type: "市辖区"},
@@ -1891,7 +1891,7 @@ var areas = []Province{
 			{Code: "420582", Name: "当阳市", Type: "县级市"},
 			{Code: "420583", Name: "枝江市", Type: "县级市"},
 		}},
-		{Code: "4206", Name: "襄阳市", Type: "地级市", Cities: []City{
+		{Code: "4206", Name: "襄阳市", Type: "地级市", Districts: []District{
 			{Code: "420602", Name: "襄城区", Type: "市辖区"},
 			{Code: "420606", Name: "樊城区", Type: "市辖区"},
 			{Code: "420607", Name: "襄州区", Type: "市辖区"},
@@ -1902,19 +1902,19 @@ var areas = []Province{
 			{Code: "420683", Name: "枣阳市", Type: "县级市"},
 			{Code: "420684", Name: "宜城市", Type: "县级市"},
 		}},
-		{Code: "4207", Name: "鄂州市", Type: "地级市", Cities: []City{
+		{Code: "4207", Name: "鄂州市", Type: "地级市", Districts: []District{
 			{Code: "420702", Name: "梁子湖区", Type: "市辖区"},
 			{Code: "420703", Name: "华容区", Type: "市辖区"},
 			{Code: "420704", Name: "鄂城区", Type: "市辖区"},
 		}},
-		{Code: "4208", Name: "荆门市", Type: "地级市", Cities: []City{
+		{Code: "4208", Name: "荆门市", Type: "地级市", Districts: []District{
 			{Code: "420802", Name: "东宝区", Type: "市辖区"},
 			{Code: "420804", Name: "掇刀区", Type: "市辖区"},
 			{Code: "420822", Name: "沙洋县", Type: "县"},
 			{Code: "420881", Name: "钟祥市", Type: "县级市"},
 			{Code: "420882", Name: "京山市", Type: "县级市"},
 		}},
-		{Code: "4209", Name: "孝感市", Type: "地级市", Cities: []City{
+		{Code: "4209", Name: "孝感市", Type: "地级市", Districts: []District{
 			{Code: "420902", Name: "孝南区", Type: "市辖区"},
 			{Code: "420921", Name: "孝昌县", Type: "县"},
 			{Code: "420922", Name: "大悟县", Type: "县"},
@@ -1923,7 +1923,7 @@ var areas = []Province{
 			{Code: "420982", Name: "安陆市", Type: "县级市"},
 			{Code: "420984", Name: "汉川市", Type: "县级市"},
 		}},
-		{Code: "4210", Name: "荆州市", Type: "地级市", Cities: []City{
+		{Code: "4210", Name: "荆州市", Type: "地级市", Districts: []District{
 			{Code: "421002", Name: "沙市区", Type: "市辖区"},
 			{Code: "421003", Name: "荆州区", Type: "市辖区"},
 			{Code: "421022", Name: "公安县", Type: "县"},
@@ -1933,7 +1933,7 @@ var areas = []Province{
 			{Code: "421087", Name: "松滋市", Type: "县级市"},
 			{Code: "421088", Name: "监利市", Type: "县级市"},
 		}},
-		{Code: "4211", Name: "黄冈市", Type: "地级市", Cities: []City{
+		{Code: "4211", Name: "黄冈市", Type: "地级市", Districts: []District{
 			{Code: "421102", Name: "黄州区", Type: "市辖区"},
 			{Code: "421121", Name: "团风县", Type: "县"},
 			{Code: "421122", Name: "红安县", Type: "县"},
@@ -1945,7 +1945,7 @@ var areas = []Province{
 			{Code: "421181", Name: "麻城市", Type: "县级市"},
 			{Code: "421182", Name: "武穴市", Type: "县级市"},
 		}},
-		{Code: "4212", Name: "咸宁市", Type: "地级市", Cities: []City{
+		{Code: "4212", Name: "咸宁市", Type: "地级市", Districts: []District{
 			{Code: "421202", Name: "咸安区", Type: "市辖区"},
 			{Code: "421221", Name: "嘉鱼县", Type: "县"},
 			{Code: "421222", Name: "通城县", Type: "县"},
@@ -1953,12 +1953,12 @@ var areas = []Province{
 			{Code: "421224", Name: "通山县", Type: "县"},
 			{Code: "421281", Name: "赤壁市", Type: "县级市"},
 		}},
-		{Code: "4213", Name: "随州市", Type: "地级市", Cities: []City{
+		{Code: "4213", Name: "随州市", Type: "地级市", Districts: []District{
 			{Code: "421303", Name: "曾都区", Type: "市辖区"},
 			{Code: "421321", Name: "随县", Type: "县"},
 			{Code: "421381", Name: "广水市", Type: "县级市"},
 		}},
-		{Code: "4228", Name: "恩施土家族苗族自治州", Type: "自治州", Cities: []City{
+		{Code: "4228", Name: "恩施土家族苗族自治州", Type: "自治州", Districts: []District{
 			{Code: "422801", Name: "恩施市", Type: "县级市"},
 			{Code: "422802", Name: "利川市", Type: "县级市"},
 			{Code: "422822", Name: "建始县", Type: "县"},
@@ -1974,7 +1974,7 @@ var areas = []Province{
 		{Code: "429021", Name: "神农架林区", Type: "林区"},
 	}},
 	{Code: "43", Name: "湖南省", Type: "省", Cities: []City{
-		{Code: "4301", Name: "长沙市", Type: "地级市", Cities: []City{
+		{Code: "4301", Name: "长沙市", Type: "地级市", Districts: []District{
 			{Code: "430102", Name: "芙蓉区", Type: "市辖区"},
 			{Code: "430103", Name: "天心区", Type: "市辖区"},
 			{Code: "430104", Name: "岳麓区", Type: "市辖区"},
@@ -1985,7 +1985,7 @@ var areas = []Province{
 			{Code: "430181", Name: "浏阳市", Type: "县级市"},
 			{Code: "430182", Name: "宁乡市", Type: "县级市"},
 		}},
-		{Code: "4302", Name: "株洲市", Type: "地级市", Cities: []City{
+		{Code: "4302", Name: "株洲市", Type: "地级市", Districts: []District{
 			{Code: "430202", Name: "荷塘区", Type: "市辖区"},
 			{Code: "430203", Name: "芦淞区", Type: "市辖区"},
 			{Code: "430204", Name: "石峰区", Type: "市辖区"},
@@ -1996,14 +1996,14 @@ var areas = []Province{
 			{Code: "430225", Name: "炎陵县", Type: "县"},
 			{Code: "430281", Name: "醴陵市", Type: "县级市"},
 		}},
-		{Code: "4303", Name: "湘潭市", Type: "地级市", Cities: []City{
+		{Code: "4303", Name: "湘潭市", Type: "地级市", Districts: []District{
 			{Code: "430302", Name: "雨湖区", Type: "市辖区"},
 			{Code: "430304", Name: "岳塘区", Type: "市辖区"},
 			{Code: "430321", Name: "湘潭县", Type: "县"},
 			{Code: "430381", Name: "湘乡市", Type: "县级市"},
 			{Code: "430382", Name: "韶山市", Type: "县级市"},
 		}},
-		{Code: "4304", Name: "衡阳市", Type: "地级市", Cities: []City{
+		{Code: "4304", Name: "衡阳市", Type: "地级市", Districts: []District{
 			{Code: "430405", Name: "珠晖区", Type: "市辖区"},
 			{Code: "430406", Name: "雁峰区", Type: "市辖区"},
 			{Code: "430407", Name: "石鼓区", Type: "市辖区"},
@@ -2017,7 +2017,7 @@ var areas = []Province{
 			{Code: "430481", Name: "耒阳市", Type: "县级市"},
 			{Code: "430482", Name: "常宁市", Type: "县级市"},
 		}},
-		{Code: "4305", Name: "邵阳市", Type: "地级市", Cities: []City{
+		{Code: "4305", Name: "邵阳市", Type: "地级市", Districts: []District{
 			{Code: "430502", Name: "双清区", Type: "市辖区"},
 			{Code: "430503", Name: "大祥区", Type: "市辖区"},
 			{Code: "430511", Name: "北塔区", Type: "市辖区"},
@@ -2031,7 +2031,7 @@ var areas = []Province{
 			{Code: "430581", Name: "武冈市", Type: "县级市"},
 			{Code: "430582", Name: "邵东市", Type: "县级市"},
 		}},
-		{Code: "4306", Name: "岳阳市", Type: "地级市", Cities: []City{
+		{Code: "4306", Name: "岳阳市", Type: "地级市", Districts: []District{
 			{Code: "430602", Name: "岳阳楼区", Type: "市辖区"},
 			{Code: "430603", Name: "云溪区", Type: "市辖区"},
 			{Code: "430611", Name: "君山区", Type: "市辖区"},
@@ -2042,7 +2042,7 @@ var areas = []Province{
 			{Code: "430681", Name: "汨罗市", Type: "县级市"},
 			{Code: "430682", Name: "临湘市", Type: "县级市"},
 		}},
-		{Code: "4307", Name: "常德市", Type: "地级市", Cities: []City{
+		{Code: "4307", Name: "常德市", Type: "地级市", Districts: []District{
 			{Code: "430702", Name: "武陵区", Type: "市辖区"},
 			{Code: "430703", Name: "鼎城区", Type: "市辖区"},
 			{Code: "430721", Name: "安乡县", Type: "县"},
@@ -2053,13 +2053,13 @@ var areas = []Province{
 			{Code: "430726", Name: "石门县", Type: "县"},
 			{Code: "430781", Name: "津市市", Type: "县级市"},
 		}},
-		{Code: "4308", Name: "张家界市", Type: "地级市", Cities: []City{
+		{Code: "4308", Name: "张家界市", Type: "地级市", Districts: []District{
 			{Code: "430802", Name: "永定区", Type: "市辖区"},
 			{Code: "430811", Name: "武陵源区", Type: "市辖区"},
 			{Code: "430821", Name: "慈利县", Type: "县"},
 			{Code: "430822", Name: "桑植县", Type: "县"},
 		}},
-		{Code: "4309", Name: "益阳市", Type: "地级市", Cities: []City{
+		{Code: "4309", Name: "益阳市", Type: "地级市", Districts: []District{
 			{Code: "430902", Name: "资阳区", Type: "市辖区"},
 			{Code: "430903", Name: "赫山区", Type: "市辖区"},
 			{Code: "430921", Name: "南县", Type: "县"},
@@ -2067,7 +2067,7 @@ var areas = []Province{
 			{Code: "430923", Name: "安化县", Type: "县"},
 			{Code: "430981", Name: "沅江市", Type: "县级市"},
 		}},
-		{Code: "4310", Name: "郴州市", Type: "地级市", Cities: []City{
+		{Code: "4310", Name: "郴州市", Type: "地级市", Districts: []District{
 			{Code: "431002", Name: "北湖区", Type: "市辖区"},
 			{Code: "431003", Name: "苏仙区", Type: "市辖区"},
 			{Code: "431021", Name: "桂阳县", Type: "县"},
@@ -2080,7 +2080,7 @@ var areas = []Province{
 			{Code: "431028", Name: "安仁县", Type: "县"},
 			{Code: "431081", Name: "资兴市", Type: "县级市"},
 		}},
-		{Code: "4311", Name: "永州市", Type: "地级市", Cities: []City{
+		{Code: "4311", Name: "永州市", Type: "地级市", Districts: []District{
 			{Code: "431102", Name: "零陵区", Type: "市辖区"},
 			{Code: "431103", Name: "冷水滩区", Type: "市辖区"},
 			{Code: "431122", Name: "东安县", Type: "县"},
@@ -2093,7 +2093,7 @@ var areas = []Province{
 			{Code: "431129", Name: "江华瑶族自治县", Type: "自治县"},
 			{Code: "431181", Name: "祁阳市", Type: "县级市"},
 		}},
-		{Code: "4312", Name: "怀化市", Type: "地级市", Cities: []City{
+		{Code: "4312", Name: "怀化市", Type: "地级市", Districts: []District{
 			{Code: "431202", Name: "鹤城区", Type: "市辖区"},
 			{Code: "431221", Name: "中方县", Type: "县"},
 			{Code: "431222", Name: "沅陵县", Type: "县"},
@@ -2107,14 +2107,14 @@ var areas = []Province{
 			{Code: "431230", Name: "通道侗族自治县", Type: "自治县"},
 			{Code: "431281", Name: "洪江市", Type: "县级市"},
 		}},
-		{Code: "4313", Name: "娄底市", Type: "地级市", Cities: []City{
+		{Code: "4313", Name: "娄底市", Type: "地级市", Districts: []District{
 			{Code: "431302", Name: "娄星区", Type: "市辖区"},
 			{Code: "431321", Name: "双峰县", Type: "县"},
 			{Code: "431322", Name: "新化县", Type: "县"},
 			{Code: "431381", Name: "冷水江市", Type: "县级市"},
 			{Code: "431382", Name: "涟源市", Type: "县级市"},
 		}},
-		{Code: "4331", Name: "湘西土家族苗族自治州", Type: "自治州", Cities: []City{
+		{Code: "4331", Name: "湘西土家族苗族自治州", Type: "自治州", Districts: []District{
 			{Code: "433101", Name: "吉首市", Type: "县级市"},
 			{Code: "433122", Name: "泸溪县", Type: "县"},
 			{Code: "433123", Name: "凤凰县", Type: "县"},
@@ -2126,7 +2126,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "44", Name: "广东省", Type: "省", Cities: []City{
-		{Code: "4401", Name: "广州市", Type: "地级市", Cities: []City{
+		{Code: "4401", Name: "广州市", Type: "地级市", Districts: []District{
 			{Code: "440103", Name: "荔湾区", Type: "市辖区"},
 			{Code: "440104", Name: "越秀区", Type: "市辖区"},
 			{Code: "440105", Name: "海珠区", Type: "市辖区"},
@@ -2139,7 +2139,7 @@ var areas = []Province{
 			{Code: "440117", Name: "从化区", Type: "市辖区"},
 			{Code: "440118", Name: "增城区", Type: "市辖区"},
 		}},
-		{Code: "4402", Name: "韶关市", Type: "地级市", Cities: []City{
+		{Code: "4402", Name: "韶关市", Type: "地级市", Districts: []District{
 			{Code: "440203", Name: "武江区", Type: "市辖区"},
 			{Code: "440204", Name: "浈江区", Type: "市辖区"},
 			{Code: "440205", Name: "曲江区", Type: "市辖区"},
@@ -2151,7 +2151,7 @@ var areas = []Province{
 			{Code: "440281", Name: "乐昌市", Type: "县级市"},
 			{Code: "440282", Name: "南雄市", Type: "县级市"},
 		}},
-		{Code: "4403", Name: "深圳市", Type: "地级市", Cities: []City{
+		{Code: "4403", Name: "深圳市", Type: "地级市", Districts: []District{
 			{Code: "440303", Name: "罗湖区", Type: "市辖区"},
 			{Code: "440304", Name: "福田区", Type: "市辖区"},
 			{Code: "440305", Name: "南山区", Type: "市辖区"},
@@ -2162,12 +2162,12 @@ var areas = []Province{
 			{Code: "440310", Name: "坪山区", Type: "市辖区"},
 			{Code: "440311", Name: "光明区", Type: "市辖区"},
 		}},
-		{Code: "4404", Name: "珠海市", Type: "地级市", Cities: []City{
+		{Code: "4404", Name: "珠海市", Type: "地级市", Districts: []District{
 			{Code: "440402", Name: "香洲区", Type: "市辖区"},
 			{Code: "440403", Name: "斗门区", Type: "市辖区"},
 			{Code: "440404", Name: "金湾区", Type: "市辖区"},
 		}},
-		{Code: "4405", Name: "汕头市", Type: "地级市", Cities: []City{
+		{Code: "4405", Name: "汕头市", Type: "地级市", Districts: []District{
 			{Code: "440507", Name: "龙湖区", Type: "市辖区"},
 			{Code: "440511", Name: "金平区", Type: "市辖区"},
 			{Code: "440512", Name: "濠江区", Type: "市辖区"},
@@ -2176,14 +2176,14 @@ var areas = []Province{
 			{Code: "440515", Name: "澄海区", Type: "市辖区"},
 			{Code: "440523", Name: "南澳县", Type: "县"},
 		}},
-		{Code: "4406", Name: "佛山市", Type: "地级市", Cities: []City{
+		{Code: "4406", Name: "佛山市", Type: "地级市", Districts: []District{
 			{Code: "440604", Name: "禅城区", Type: "市辖区"},
 			{Code: "440605", Name: "南海区", Type: "市辖区"},
 			{Code: "440606", Name: "顺德区", Type: "市辖区"},
 			{Code: "440607", Name: "三水区", Type: "市辖区"},
 			{Code: "440608", Name: "高明区", Type: "市辖区"},
 		}},
-		{Code: "4407", Name: "江门市", Type: "地级市", Cities: []City{
+		{Code: "4407", Name: "江门市", Type: "地级市", Districts: []District{
 			{Code: "440703", Name: "蓬江区", Type: "市辖区"},
 			{Code: "440704", Name: "江海区", Type: "市辖区"},
 			{Code: "440705", Name: "新会区", Type: "市辖区"},
@@ -2192,7 +2192,7 @@ var areas = []Province{
 			{Code: "440784", Name: "鹤山市", Type: "县级市"},
 			{Code: "440785", Name: "恩平市", Type: "县级市"},
 		}},
-		{Code: "4408", Name: "湛江市", Type: "地级市", Cities: []City{
+		{Code: "4408", Name: "湛江市", Type: "地级市", Districts: []District{
 			{Code: "440802", Name: "赤坎区", Type: "市辖区"},
 			{Code: "440803", Name: "霞山区", Type: "市辖区"},
 			{Code: "440804", Name: "坡头区", Type: "市辖区"},
@@ -2203,14 +2203,14 @@ var areas = []Province{
 			{Code: "440882", Name: "雷州市", Type: "县级市"},
 			{Code: "440883", Name: "吴川市", Type: "县级市"},
 		}},
-		{Code: "4409", Name: "茂名市", Type: "地级市", Cities: []City{
+		{Code: "4409", Name: "茂名市", Type: "地级市", Districts: []District{
 			{Code: "440902", Name: "茂南区", Type: "市辖区"},
 			{Code: "440904", Name: "电白区", Type: "市辖区"},
 			{Code: "440981", Name: "高州市", Type: "县级市"},
 			{Code: "440982", Name: "化州市", Type: "县级市"},
 			{Code: "440983", Name: "信宜市", Type: "县级市"},
 		}},
-		{Code: "4412", Name: "肇庆市", Type: "地级市", Cities: []City{
+		{Code: "4412", Name: "肇庆市", Type: "地级市", Districts: []District{
 			{Code: "441202", Name: "端州区", Type: "市辖区"},
 			{Code: "441203", Name: "鼎湖区", Type: "市辖区"},
 			{Code: "441204", Name: "高要区", Type: "市辖区"},
@@ -2220,14 +2220,14 @@ var areas = []Province{
 			{Code: "441226", Name: "德庆县", Type: "县"},
 			{Code: "441284", Name: "四会市", Type: "县级市"},
 		}},
-		{Code: "4413", Name: "惠州市", Type: "地级市", Cities: []City{
+		{Code: "4413", Name: "惠州市", Type: "地级市", Districts: []District{
 			{Code: "441302", Name: "惠城区", Type: "市辖区"},
 			{Code: "441303", Name: "惠阳区", Type: "市辖区"},
 			{Code: "441322", Name: "博罗县", Type: "县"},
 			{Code: "441323", Name: "惠东县", Type: "县"},
 			{Code: "441324", Name: "龙门县", Type: "县"},
 		}},
-		{Code: "4414", Name: "梅州市", Type: "地级市", Cities: []City{
+		{Code: "4414", Name: "梅州市", Type: "地级市", Districts: []District{
 			{Code: "441402", Name: "梅江区", Type: "市辖区"},
 			{Code: "441403", Name: "梅县区", Type: "市辖区"},
 			{Code: "441422", Name: "大埔县", Type: "县"},
@@ -2237,13 +2237,13 @@ var areas = []Province{
 			{Code: "441427", Name: "蕉岭县", Type: "县"},
 			{Code: "441481", Name: "兴宁市", Type: "县级市"},
 		}},
-		{Code: "4415", Name: "汕尾市", Type: "地级市", Cities: []City{
+		{Code: "4415", Name: "汕尾市", Type: "地级市", Districts: []District{
 			{Code: "441502", Name: "城区", Type: "市辖区"},
 			{Code: "441521", Name: "海丰县", Type: "县"},
 			{Code: "441523", Name: "陆河县", Type: "县"},
 			{Code: "441581", Name: "陆丰市", Type: "县级市"},
 		}},
-		{Code: "4416", Name: "河源市", Type: "地级市", Cities: []City{
+		{Code: "4416", Name: "河源市", Type: "地级市", Districts: []District{
 			{Code: "441602", Name: "源城区", Type: "市辖区"},
 			{Code: "441621", Name: "紫金县", Type: "县"},
 			{Code: "441622", Name: "龙川县", Type: "县"},
@@ -2251,13 +2251,13 @@ var areas = []Province{
 			{Code: "441624", Name: "和平县", Type: "县"},
 			{Code: "441625", Name: "东源县", Type: "县"},
 		}},
-		{Code: "4417", Name: "阳江市", Type: "地级市", Cities: []City{
+		{Code: "4417", Name: "阳江市", Type: "地级市", Districts: []District{
 			{Code: "441702", Name: "江城区", Type: "市辖区"},
 			{Code: "441704", Name: "阳东区", Type: "市辖区"},
 			{Code: "441721", Name: "阳西县", Type: "县"},
 			{Code: "441781", Name: "阳春市", Type: "县级市"},
 		}},
-		{Code: "4418", Name: "清远市", Type: "地级市", Cities: []City{
+		{Code: "4418", Name: "清远市", Type: "地级市", Districts: []District{
 			{Code: "441802", Name: "清城区", Type: "市辖区"},
 			{Code: "441803", Name: "清新区", Type: "市辖区"},
 			{Code: "441821", Name: "佛冈县", Type: "县"},
@@ -2269,19 +2269,19 @@ var areas = []Province{
 		}},
 		{Code: "4419", Name: "东莞市", Type: "地级市"},
 		{Code: "4420", Name: "中山市", Type: "地级市"},
-		{Code: "4451", Name: "潮州市", Type: "地级市", Cities: []City{
+		{Code: "4451", Name: "潮州市", Type: "地级市", Districts: []District{
 			{Code: "445102", Name: "湘桥区", Type: "市辖区"},
 			{Code: "445103", Name: "潮安区", Type: "市辖区"},
 			{Code: "445122", Name: "饶平县", Type: "县"},
 		}},
-		{Code: "4452", Name: "揭阳市", Type: "地级市", Cities: []City{
+		{Code: "4452", Name: "揭阳市", Type: "地级市", Districts: []District{
 			{Code: "445202", Name: "榕城区", Type: "市辖区"},
 			{Code: "445203", Name: "揭东区", Type: "市辖区"},
 			{Code: "445222", Name: "揭西县", Type: "县"},
 			{Code: "445224", Name: "惠来县", Type: "县"},
 			{Code: "445281", Name: "普宁市", Type: "县级市"},
 		}},
-		{Code: "4453", Name: "云浮市", Type: "地级市", Cities: []City{
+		{Code: "4453", Name: "云浮市", Type: "地级市", Districts: []District{
 			{Code: "445302", Name: "云城区", Type: "市辖区"},
 			{Code: "445303", Name: "云安区", Type: "市辖区"},
 			{Code: "445321", Name: "新兴县", Type: "县"},
@@ -2290,7 +2290,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "45", Name: "广西壮族自治区", Type: "自治区", Cities: []City{
-		{Code: "4501", Name: "南宁市", Type: "地级市", Cities: []City{
+		{Code: "4501", Name: "南宁市", Type: "地级市", Districts: []District{
 			{Code: "450102", Name: "兴宁区", Type: "市辖区"},
 			{Code: "450103", Name: "青秀区", Type: "市辖区"},
 			{Code: "450105", Name: "江南区", Type: "市辖区"},
@@ -2304,7 +2304,7 @@ var areas = []Province{
 			{Code: "450126", Name: "宾阳县", Type: "县"},
 			{Code: "450181", Name: "横州市", Type: "县级市"},
 		}},
-		{Code: "4502", Name: "柳州市", Type: "地级市", Cities: []City{
+		{Code: "4502", Name: "柳州市", Type: "地级市", Districts: []District{
 			{Code: "450202", Name: "城中区", Type: "市辖区"},
 			{Code: "450203", Name: "鱼峰区", Type: "市辖区"},
 			{Code: "450204", Name: "柳南区", Type: "市辖区"},
@@ -2316,7 +2316,7 @@ var areas = []Province{
 			{Code: "450225", Name: "融水苗族自治县", Type: "自治县"},
 			{Code: "450226", Name: "三江侗族自治县", Type: "自治县"},
 		}},
-		{Code: "4503", Name: "桂林市", Type: "地级市", Cities: []City{
+		{Code: "4503", Name: "桂林市", Type: "地级市", Districts: []District{
 			{Code: "450302", Name: "秀峰区", Type: "市辖区"},
 			{Code: "450303", Name: "叠彩区", Type: "市辖区"},
 			{Code: "450304", Name: "象山区", Type: "市辖区"},
@@ -2335,7 +2335,7 @@ var areas = []Province{
 			{Code: "450332", Name: "恭城瑶族自治县", Type: "自治县"},
 			{Code: "450381", Name: "荔浦市", Type: "县级市"},
 		}},
-		{Code: "4504", Name: "梧州市", Type: "地级市", Cities: []City{
+		{Code: "4504", Name: "梧州市", Type: "地级市", Districts: []District{
 			{Code: "450403", Name: "万秀区", Type: "市辖区"},
 			{Code: "450405", Name: "长洲区", Type: "市辖区"},
 			{Code: "450406", Name: "龙圩区", Type: "市辖区"},
@@ -2344,32 +2344,32 @@ var areas = []Province{
 			{Code: "450423", Name: "蒙山县", Type: "县"},
 			{Code: "450481", Name: "岑溪市", Type: "县级市"},
 		}},
-		{Code: "4505", Name: "北海市", Type: "地级市", Cities: []City{
+		{Code: "4505", Name: "北海市", Type: "地级市", Districts: []District{
 			{Code: "450502", Name: "海城区", Type: "市辖区"},
 			{Code: "450503", Name: "银海区", Type: "市辖区"},
 			{Code: "450512", Name: "铁山港区", Type: "市辖区"},
 			{Code: "450521", Name: "合浦县", Type: "县"},
 		}},
-		{Code: "4506", Name: "防城港市", Type: "地级市", Cities: []City{
+		{Code: "4506", Name: "防城港市", Type: "地级市", Districts: []District{
 			{Code: "450602", Name: "港口区", Type: "市辖区"},
 			{Code: "450603", Name: "防城区", Type: "市辖区"},
 			{Code: "450621", Name: "上思县", Type: "县"},
 			{Code: "450681", Name: "东兴市", Type: "县级市"},
 		}},
-		{Code: "4507", Name: "钦州市", Type: "地级市", Cities: []City{
+		{Code: "4507", Name: "钦州市", Type: "地级市", Districts: []District{
 			{Code: "450702", Name: "钦南区", Type: "市辖区"},
 			{Code: "450703", Name: "钦北区", Type: "市辖区"},
 			{Code: "450721", Name: "灵山县", Type: "县"},
 			{Code: "450722", Name: "浦北县", Type: "县"},
 		}},
-		{Code: "4508", Name: "贵港市", Type: "地级市", Cities: []City{
+		{Code: "4508", Name: "贵港市", Type: "地级市", Districts: []District{
 			{Code: "450802", Name: "港北区", Type: "市辖区"},
 			{Code: "450803", Name: "港南区", Type: "市辖区"},
 			{Code: "450804", Name: "覃塘区", Type: "市辖区"},
 			{Code: "450821", Name: "平南县", Type: "县"},
 			{Code: "450881", Name: "桂平市", Type: "县级市"},
 		}},
-		{Code: "4509", Name: "玉林市", Type: "地级市", Cities: []City{
+		{Code: "4509", Name: "玉林市", Type: "地级市", Districts: []District{
 			{Code: "450902", Name: "玉州区", Type: "市辖区"},
 			{Code: "450903", Name: "福绵区", Type: "市辖区"},
 			{Code: "450921", Name: "容县", Type: "县"},
@@ -2378,7 +2378,7 @@ var areas = []Province{
 			{Code: "450924", Name: "兴业县", Type: "县"},
 			{Code: "450981", Name: "北流市", Type: "县级市"},
 		}},
-		{Code: "4510", Name: "百色市", Type: "地级市", Cities: []City{
+		{Code: "4510", Name: "百色市", Type: "地级市", Districts: []District{
 			{Code: "451002", Name: "右江区", Type: "市辖区"},
 			{Code: "451003", Name: "田阳区", Type: "市辖区"},
 			{Code: "451022", Name: "田东县", Type: "县"},
@@ -2392,14 +2392,14 @@ var areas = []Province{
 			{Code: "451081", Name: "靖西市", Type: "县级市"},
 			{Code: "451082", Name: "平果市", Type: "县级市"},
 		}},
-		{Code: "4511", Name: "贺州市", Type: "地级市", Cities: []City{
+		{Code: "4511", Name: "贺州市", Type: "地级市", Districts: []District{
 			{Code: "451102", Name: "八步区", Type: "市辖区"},
 			{Code: "451103", Name: "平桂区", Type: "市辖区"},
 			{Code: "451121", Name: "昭平县", Type: "县"},
 			{Code: "451122", Name: "钟山县", Type: "县"},
 			{Code: "451123", Name: "富川瑶族自治县", Type: "自治县"},
 		}},
-		{Code: "4512", Name: "河池市", Type: "地级市", Cities: []City{
+		{Code: "4512", Name: "河池市", Type: "地级市", Districts: []District{
 			{Code: "451202", Name: "金城江区", Type: "市辖区"},
 			{Code: "451203", Name: "宜州区", Type: "市辖区"},
 			{Code: "451221", Name: "南丹县", Type: "县"},
@@ -2412,7 +2412,7 @@ var areas = []Province{
 			{Code: "451228", Name: "都安瑶族自治县", Type: "自治县"},
 			{Code: "451229", Name: "大化瑶族自治县", Type: "自治县"},
 		}},
-		{Code: "4513", Name: "来宾市", Type: "地级市", Cities: []City{
+		{Code: "4513", Name: "来宾市", Type: "地级市", Districts: []District{
 			{Code: "451302", Name: "兴宾区", Type: "市辖区"},
 			{Code: "451321", Name: "忻城县", Type: "县"},
 			{Code: "451322", Name: "象州县", Type: "县"},
@@ -2420,7 +2420,7 @@ var areas = []Province{
 			{Code: "451324", Name: "金秀瑶族自治县", Type: "自治县"},
 			{Code: "451381", Name: "合山市", Type: "县级市"},
 		}},
-		{Code: "4514", Name: "崇左市", Type: "地级市", Cities: []City{
+		{Code: "4514", Name: "崇左市", Type: "地级市", Districts: []District{
 			{Code: "451402", Name: "江州区", Type: "市辖区"},
 			{Code: "451421", Name: "扶绥县", Type: "县"},
 			{Code: "451422", Name: "宁明县", Type: "县"},
@@ -2431,19 +2431,19 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "46", Name: "海南省", Type: "省", Cities: []City{
-		{Code: "4601", Name: "海口市", Type: "地级市", Cities: []City{
+		{Code: "4601", Name: "海口市", Type: "地级市", Districts: []District{
 			{Code: "460105", Name: "秀英区", Type: "市辖区"},
 			{Code: "460106", Name: "龙华区", Type: "市辖区"},
 			{Code: "460107", Name: "琼山区", Type: "市辖区"},
 			{Code: "460108", Name: "美兰区", Type: "市辖区"},
 		}},
-		{Code: "4602", Name: "三亚市", Type: "地级市", Cities: []City{
+		{Code: "4602", Name: "三亚市", Type: "地级市", Districts: []District{
 			{Code: "460202", Name: "海棠区", Type: "市辖区"},
 			{Code: "460203", Name: "吉阳区", Type: "市辖区"},
 			{Code: "460204", Name: "天涯区", Type: "市辖区"},
 			{Code: "460205", Name: "崖州区", Type: "市辖区"},
 		}},
-		{Code: "4603", Name: "三沙市", Type: "地级市", Cities: []City{
+		{Code: "4603", Name: "三沙市", Type: "地级市", Districts: []District{
 			{Code: "460302", Name: "西沙区", Type: "市辖区"},
 			{Code: "460303", Name: "南沙区", Type: "市辖区"},
 		}},
@@ -2504,7 +2504,7 @@ var areas = []Province{
 		{Code: "500243", Name: "彭水苗族土家族自治县", Type: "自治县"},
 	}},
 	{Code: "51", Name: "四川省", Type: "省", Cities: []City{
-		{Code: "5101", Name: "成都市", Type: "地级市", Cities: []City{
+		{Code: "5101", Name: "成都市", Type: "地级市", Districts: []District{
 			{Code: "510104", Name: "锦江区", Type: "市辖区"},
 			{Code: "510105", Name: "青羊区", Type: "市辖区"},
 			{Code: "510106", Name: "金牛区", Type: "市辖区"},
@@ -2526,7 +2526,7 @@ var areas = []Province{
 			{Code: "510184", Name: "崇州市", Type: "县级市"},
 			{Code: "510185", Name: "简阳市", Type: "县级市"},
 		}},
-		{Code: "5103", Name: "自贡市", Type: "地级市", Cities: []City{
+		{Code: "5103", Name: "自贡市", Type: "地级市", Districts: []District{
 			{Code: "510302", Name: "自流井区", Type: "市辖区"},
 			{Code: "510303", Name: "贡井区", Type: "市辖区"},
 			{Code: "510304", Name: "大安区", Type: "市辖区"},
@@ -2534,14 +2534,14 @@ var areas = []Province{
 			{Code: "510321", Name: "荣县", Type: "县"},
 			{Code: "510322", Name: "富顺县", Type: "县"},
 		}},
-		{Code: "5104", Name: "攀枝花市", Type: "地级市", Cities: []City{
+		{Code: "5104", Name: "攀枝花市", Type: "地级市", Districts: []District{
 			{Code: "510402", Name: "东区", Type: "市辖区"},
 			{Code: "510403", Name: "西区", Type: "市辖区"},
 			{Code: "510411", Name: "仁和区", Type: "市辖区"},
 			{Code: "510421", Name: "米易县", Type: "县"},
 			{Code: "510422", Name: "盐边县", Type: "县"},
 		}},
-		{Code: "5105", Name: "泸州市", Type: "地级市", Cities: []City{
+		{Code: "5105", Name: "泸州市", Type: "地级市", Districts: []District{
 			{Code: "510502", Name: "江阳区", Type: "市辖区"},
 			{Code: "510503", Name: "纳溪区", Type: "市辖区"},
 			{Code: "510504", Name: "龙马潭区", Type: "市辖区"},
@@ -2550,7 +2550,7 @@ var areas = []Province{
 			{Code: "510524", Name: "叙永县", Type: "县"},
 			{Code: "510525", Name: "古蔺县", Type: "县"},
 		}},
-		{Code: "5106", Name: "德阳市", Type: "地级市", Cities: []City{
+		{Code: "5106", Name: "德阳市", Type: "地级市", Districts: []District{
 			{Code: "510603", Name: "旌阳区", Type: "市辖区"},
 			{Code: "510604", Name: "罗江区", Type: "市辖区"},
 			{Code: "510623", Name: "中江县", Type: "县"},
@@ -2558,7 +2558,7 @@ var areas = []Province{
 			{Code: "510682", Name: "什邡市", Type: "县级市"},
 			{Code: "510683", Name: "绵竹市", Type: "县级市"},
 		}},
-		{Code: "5107", Name: "绵阳市", Type: "地级市", Cities: []City{
+		{Code: "5107", Name: "绵阳市", Type: "地级市", Districts: []District{
 			{Code: "510703", Name: "涪城区", Type: "市辖区"},
 			{Code: "510704", Name: "游仙区", Type: "市辖区"},
 			{Code: "510705", Name: "安州区", Type: "市辖区"},
@@ -2569,7 +2569,7 @@ var areas = []Province{
 			{Code: "510727", Name: "平武县", Type: "县"},
 			{Code: "510781", Name: "江油市", Type: "县级市"},
 		}},
-		{Code: "5108", Name: "广元市", Type: "地级市", Cities: []City{
+		{Code: "5108", Name: "广元市", Type: "地级市", Districts: []District{
 			{Code: "510802", Name: "利州区", Type: "市辖区"},
 			{Code: "510811", Name: "昭化区", Type: "市辖区"},
 			{Code: "510812", Name: "朝天区", Type: "市辖区"},
@@ -2578,21 +2578,21 @@ var areas = []Province{
 			{Code: "510823", Name: "剑阁县", Type: "县"},
 			{Code: "510824", Name: "苍溪县", Type: "县"},
 		}},
-		{Code: "5109", Name: "遂宁市", Type: "地级市", Cities: []City{
+		{Code: "5109", Name: "遂宁市", Type: "地级市", Districts: []District{
 			{Code: "510903", Name: "船山区", Type: "市辖区"},
 			{Code: "510904", Name: "安居区", Type: "市辖区"},
 			{Code: "510921", Name: "蓬溪县", Type: "县"},
 			{Code: "510923", Name: "大英县", Type: "县"},
 			{Code: "510981", Name: "射洪市", Type: "县级市"},
 		}},
-		{Code: "5110", Name: "内江市", Type: "地级市", Cities: []City{
+		{Code: "5110", Name: "内江市", Type: "地级市", Districts: []District{
 			{Code: "511002", Name: "市中区", Type: "市辖区"},
 			{Code: "511011", Name: "东兴区", Type: "市辖区"},
 			{Code: "511024", Name: "威远县", Type: "县"},
 			{Code: "511025", Name: "资中县", Type: "县"},
 			{Code: "511083", Name: "隆昌市", Type: "县级市"},
 		}},
-		{Code: "5111", Name: "乐山市", Type: "地级市", Cities: []City{
+		{Code: "5111", Name: "乐山市", Type: "地级市", Districts: []District{
 			{Code: "511102", Name: "市中区", Type: "市辖区"},
 			{Code: "511111", Name: "沙湾区", Type: "市辖区"},
 			{Code: "511112", Name: "五通桥区", Type: "市辖区"},
@@ -2605,7 +2605,7 @@ var areas = []Province{
 			{Code: "511133", Name: "马边彝族自治县", Type: "自治县"},
 			{Code: "511181", Name: "峨眉山市", Type: "县级市"},
 		}},
-		{Code: "5113", Name: "南充市", Type: "地级市", Cities: []City{
+		{Code: "5113", Name: "南充市", Type: "地级市", Districts: []District{
 			{Code: "511302", Name: "顺庆区", Type: "市辖区"},
 			{Code: "511303", Name: "高坪区", Type: "市辖区"},
 			{Code: "511304", Name: "嘉陵区", Type: "市辖区"},
@@ -2616,7 +2616,7 @@ var areas = []Province{
 			{Code: "511325", Name: "西充县", Type: "县"},
 			{Code: "511381", Name: "阆中市", Type: "县级市"},
 		}},
-		{Code: "5114", Name: "眉山市", Type: "地级市", Cities: []City{
+		{Code: "5114", Name: "眉山市", Type: "地级市", Districts: []District{
 			{Code: "511402", Name: "东坡区", Type: "市辖区"},
 			{Code: "511403", Name: "彭山区", Type: "市辖区"},
 			{Code: "511421", Name: "仁寿县", Type: "县"},
@@ -2624,7 +2624,7 @@ var areas = []Province{
 			{Code: "511424", Name: "丹棱县", Type: "县"},
 			{Code: "511425", Name: "青神县", Type: "县"},
 		}},
-		{Code: "5115", Name: "宜宾市", Type: "地级市", Cities: []City{
+		{Code: "5115", Name: "宜宾市", Type: "地级市", Districts: []District{
 			{Code: "511502", Name: "翠屏区", Type: "市辖区"},
 			{Code: "511503", Name: "南溪区", Type: "市辖区"},
 			{Code: "511504", Name: "叙州区", Type: "市辖区"},
@@ -2636,7 +2636,7 @@ var areas = []Province{
 			{Code: "511528", Name: "兴文县", Type: "县"},
 			{Code: "511529", Name: "屏山县", Type: "县"},
 		}},
-		{Code: "5116", Name: "广安市", Type: "地级市", Cities: []City{
+		{Code: "5116", Name: "广安市", Type: "地级市", Districts: []District{
 			{Code: "511602", Name: "广安区", Type: "市辖区"},
 			{Code: "511603", Name: "前锋区", Type: "市辖区"},
 			{Code: "511621", Name: "岳池县", Type: "县"},
@@ -2644,7 +2644,7 @@ var areas = []Province{
 			{Code: "511623", Name: "邻水县", Type: "县"},
 			{Code: "511681", Name: "华蓥市", Type: "县级市"},
 		}},
-		{Code: "5117", Name: "达州市", Type: "地级市", Cities: []City{
+		{Code: "5117", Name: "达州市", Type: "地级市", Districts: []District{
 			{Code: "511702", Name: "通川区", Type: "市辖区"},
 			{Code: "511703", Name: "达川区", Type: "市辖区"},
 			{Code: "511722", Name: "宣汉县", Type: "县"},
@@ -2653,7 +2653,7 @@ var areas = []Province{
 			{Code: "511725", Name: "渠县", Type: "县"},
 			{Code: "511781", Name: "万源市", Type: "县级市"},
 		}},
-		{Code: "5118", Name: "雅安市", Type: "地级市", Cities: []City{
+		{Code: "5118", Name: "雅安市", Type: "地级市", Districts: []District{
 			{Code: "511802", Name: "雨城区", Type: "市辖区"},
 			{Code: "511803", Name: "名山区", Type: "市辖区"},
 			{Code: "511822", Name: "荥经县", Type: "县"},
@@ -2663,19 +2663,19 @@ var areas = []Province{
 			{Code: "511826", Name: "芦山县", Type: "县"},
 			{Code: "511827", Name: "宝兴县", Type: "县"},
 		}},
-		{Code: "5119", Name: "巴中市", Type: "地级市", Cities: []City{
+		{Code: "5119", Name: "巴中市", Type: "地级市", Districts: []District{
 			{Code: "511902", Name: "巴州区", Type: "市辖区"},
 			{Code: "511903", Name: "恩阳区", Type: "市辖区"},
 			{Code: "511921", Name: "通江县", Type: "县"},
 			{Code: "511922", Name: "南江县", Type: "县"},
 			{Code: "511923", Name: "平昌县", Type: "县"},
 		}},
-		{Code: "5120", Name: "资阳市", Type: "地级市", Cities: []City{
+		{Code: "5120", Name: "资阳市", Type: "地级市", Districts: []District{
 			{Code: "512002", Name: "雁江区", Type: "市辖区"},
 			{Code: "512021", Name: "安岳县", Type: "县"},
 			{Code: "512022", Name: "乐至县", Type: "县"},
 		}},
-		{Code: "5132", Name: "阿坝藏族羌族自治州", Type: "自治州", Cities: []City{
+		{Code: "5132", Name: "阿坝藏族羌族自治州", Type: "自治州", Districts: []District{
 			{Code: "513201", Name: "马尔康市", Type: "县级市"},
 			{Code: "513221", Name: "汶川县", Type: "县"},
 			{Code: "513222", Name: "理县", Type: "县"},
@@ -2690,7 +2690,7 @@ var areas = []Province{
 			{Code: "513232", Name: "若尔盖县", Type: "县"},
 			{Code: "513233", Name: "红原县", Type: "县"},
 		}},
-		{Code: "5133", Name: "甘孜藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "5133", Name: "甘孜藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "513301", Name: "康定市", Type: "县级市"},
 			{Code: "513322", Name: "泸定县", Type: "县"},
 			{Code: "513323", Name: "丹巴县", Type: "县"},
@@ -2710,7 +2710,7 @@ var areas = []Province{
 			{Code: "513337", Name: "稻城县", Type: "县"},
 			{Code: "513338", Name: "得荣县", Type: "县"},
 		}},
-		{Code: "5134", Name: "凉山彝族自治州", Type: "自治州", Cities: []City{
+		{Code: "5134", Name: "凉山彝族自治州", Type: "自治州", Districts: []District{
 			{Code: "513401", Name: "西昌市", Type: "县级市"},
 			{Code: "513402", Name: "会理市", Type: "县级市"},
 			{Code: "513422", Name: "木里藏族自治县", Type: "自治县"},
@@ -2731,7 +2731,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "52", Name: "贵州省", Type: "省", Cities: []City{
-		{Code: "5201", Name: "贵阳市", Type: "地级市", Cities: []City{
+		{Code: "5201", Name: "贵阳市", Type: "地级市", Districts: []District{
 			{Code: "520102", Name: "南明区", Type: "市辖区"},
 			{Code: "520103", Name: "云岩区", Type: "市辖区"},
 			{Code: "520111", Name: "花溪区", Type: "市辖区"},
@@ -2743,13 +2743,13 @@ var areas = []Province{
 			{Code: "520123", Name: "修文县", Type: "县"},
 			{Code: "520181", Name: "清镇市", Type: "县级市"},
 		}},
-		{Code: "5202", Name: "六盘水市", Type: "地级市", Cities: []City{
+		{Code: "5202", Name: "六盘水市", Type: "地级市", Districts: []District{
 			{Code: "520201", Name: "钟山区", Type: "市辖区"},
 			{Code: "520203", Name: "六枝特区", Type: "特区"},
 			{Code: "520204", Name: "水城区", Type: "市辖区"},
 			{Code: "520281", Name: "盘州市", Type: "县级市"},
 		}},
-		{Code: "5203", Name: "遵义市", Type: "地级市", Cities: []City{
+		{Code: "5203", Name: "遵义市", Type: "地级市", Districts: []District{
 			{Code: "520302", Name: "红花岗区", Type: "市辖区"},
 			{Code: "520303", Name: "汇川区", Type: "市辖区"},
 			{Code: "520304", Name: "播州区", Type: "市辖区"},
@@ -2765,7 +2765,7 @@ var areas = []Province{
 			{Code: "520381", Name: "赤水市", Type: "县级市"},
 			{Code: "520382", Name: "仁怀市", Type: "县级市"},
 		}},
-		{Code: "5204", Name: "安顺市", Type: "地级市", Cities: []City{
+		{Code: "5204", Name: "安顺市", Type: "地级市", Districts: []District{
 			{Code: "520402", Name: "西秀区", Type: "市辖区"},
 			{Code: "520403", Name: "平坝区", Type: "市辖区"},
 			{Code: "520422", Name: "普定县", Type: "县"},
@@ -2773,7 +2773,7 @@ var areas = []Province{
 			{Code: "520424", Name: "关岭布依族苗族自治县", Type: "自治县"},
 			{Code: "520425", Name: "紫云苗族布依族自治县", Type: "自治县"},
 		}},
-		{Code: "5205", Name: "毕节市", Type: "地级市", Cities: []City{
+		{Code: "5205", Name: "毕节市", Type: "地级市", Districts: []District{
 			{Code: "520502", Name: "七星关区", Type: "市辖区"},
 			{Code: "520521", Name: "大方县", Type: "县"},
 			{Code: "520523", Name: "金沙县", Type: "县"},
@@ -2783,7 +2783,7 @@ var areas = []Province{
 			{Code: "520527", Name: "赫章县", Type: "县"},
 			{Code: "520581", Name: "黔西市", Type: "县级市"},
 		}},
-		{Code: "5206", Name: "铜仁市", Type: "地级市", Cities: []City{
+		{Code: "5206", Name: "铜仁市", Type: "地级市", Districts: []District{
 			{Code: "520602", Name: "碧江区", Type: "市辖区"},
 			{Code: "520603", Name: "万山区", Type: "市辖区"},
 			{Code: "520621", Name: "江口县", Type: "县"},
@@ -2795,7 +2795,7 @@ var areas = []Province{
 			{Code: "520627", Name: "沿河土家族自治县", Type: "自治县"},
 			{Code: "520628", Name: "松桃苗族自治县", Type: "自治县"},
 		}},
-		{Code: "5223", Name: "黔西南布依族苗族自治州", Type: "自治州", Cities: []City{
+		{Code: "5223", Name: "黔西南布依族苗族自治州", Type: "自治州", Districts: []District{
 			{Code: "522301", Name: "兴义市", Type: "县级市"},
 			{Code: "522302", Name: "兴仁市", Type: "县级市"},
 			{Code: "522323", Name: "普安县", Type: "县"},
@@ -2805,7 +2805,7 @@ var areas = []Province{
 			{Code: "522327", Name: "册亨县", Type: "县"},
 			{Code: "522328", Name: "安龙县", Type: "县"},
 		}},
-		{Code: "5226", Name: "黔东南苗族侗族自治州", Type: "自治州", Cities: []City{
+		{Code: "5226", Name: "黔东南苗族侗族自治州", Type: "自治州", Districts: []District{
 			{Code: "522601", Name: "凯里市", Type: "县级市"},
 			{Code: "522622", Name: "黄平县", Type: "县"},
 			{Code: "522623", Name: "施秉县", Type: "县"},
@@ -2823,7 +2823,7 @@ var areas = []Province{
 			{Code: "522635", Name: "麻江县", Type: "县"},
 			{Code: "522636", Name: "丹寨县", Type: "县"},
 		}},
-		{Code: "5227", Name: "黔南布依族苗族自治州", Type: "自治州", Cities: []City{
+		{Code: "5227", Name: "黔南布依族苗族自治州", Type: "自治州", Districts: []District{
 			{Code: "522701", Name: "都匀市", Type: "县级市"},
 			{Code: "522702", Name: "福泉市", Type: "县级市"},
 			{Code: "522722", Name: "荔波县", Type: "县"},
@@ -2839,7 +2839,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "53", Name: "云南省", Type: "省", Cities: []City{
-		{Code: "5301", Name: "昆明市", Type: "地级市", Cities: []City{
+		{Code: "5301", Name: "昆明市", Type: "地级市", Districts: []District{
 			{Code: "530102", Name: "五华区", Type: "市辖区"},
 			{Code: "530103", Name: "盘龙区", Type: "市辖区"},
 			{Code: "530111", Name: "官渡区", Type: "市辖区"},
@@ -2855,7 +2855,7 @@ var areas = []Province{
 			{Code: "530129", Name: "寻甸回族彝族自治县", Type: "自治县"},
 			{Code: "530181", Name: "安宁市", Type: "县级市"},
 		}},
-		{Code: "5303", Name: "曲靖市", Type: "地级市", Cities: []City{
+		{Code: "5303", Name: "曲靖市", Type: "地级市", Districts: []District{
 			{Code: "530302", Name: "麒麟区", Type: "市辖区"},
 			{Code: "530303", Name: "沾益区", Type: "市辖区"},
 			{Code: "530304", Name: "马龙区", Type: "市辖区"},
@@ -2866,7 +2866,7 @@ var areas = []Province{
 			{Code: "530326", Name: "会泽县", Type: "县"},
 			{Code: "530381", Name: "宣威市", Type: "县级市"},
 		}},
-		{Code: "5304", Name: "玉溪市", Type: "地级市", Cities: []City{
+		{Code: "5304", Name: "玉溪市", Type: "地级市", Districts: []District{
 			{Code: "530402", Name: "红塔区", Type: "市辖区"},
 			{Code: "530403", Name: "江川区", Type: "市辖区"},
 			{Code: "530423", Name: "通海县", Type: "县"},
@@ -2877,14 +2877,14 @@ var areas = []Province{
 			{Code: "530428", Name: "元江哈尼族彝族傣族自治县", Type: "自治县"},
 			{Code: "530481", Name: "澄江市", Type: "县级市"},
 		}},
-		{Code: "5305", Name: "保山市", Type: "地级市", Cities: []City{
+		{Code: "5305", Name: "保山市", Type: "地级市", Districts: []District{
 			{Code: "530502", Name: "隆阳区", Type: "市辖区"},
 			{Code: "530521", Name: "施甸县", Type: "县"},
 			{Code: "530523", Name: "龙陵县", Type: "县"},
 			{Code: "530524", Name: "昌宁县", Type: "县"},
 			{Code: "530581", Name: "腾冲市", Type: "县级市"},
 		}},
-		{Code: "5306", Name: "昭通市", Type: "地级市", Cities: []City{
+		{Code: "5306", Name: "昭通市", Type: "地级市", Districts: []District{
 			{Code: "530602", Name: "昭阳区", Type: "市辖区"},
 			{Code: "530621", Name: "鲁甸县", Type: "县"},
 			{Code: "530622", Name: "巧家县", Type: "县"},
@@ -2897,14 +2897,14 @@ var areas = []Province{
 			{Code: "530629", Name: "威信县", Type: "县"},
 			{Code: "530681", Name: "水富市", Type: "县级市"},
 		}},
-		{Code: "5307", Name: "丽江市", Type: "地级市", Cities: []City{
+		{Code: "5307", Name: "丽江市", Type: "地级市", Districts: []District{
 			{Code: "530702", Name: "古城区", Type: "市辖区"},
 			{Code: "530721", Name: "玉龙纳西族自治县", Type: "自治县"},
 			{Code: "530722", Name: "永胜县", Type: "县"},
 			{Code: "530723", Name: "华坪县", Type: "县"},
 			{Code: "530724", Name: "宁蒗彝族自治县", Type: "自治县"},
 		}},
-		{Code: "5308", Name: "普洱市", Type: "地级市", Cities: []City{
+		{Code: "5308", Name: "普洱市", Type: "地级市", Districts: []District{
 			{Code: "530802", Name: "思茅区", Type: "市辖区"},
 			{Code: "530821", Name: "宁洱哈尼族彝族自治县", Type: "自治县"},
 			{Code: "530822", Name: "墨江哈尼族自治县", Type: "自治县"},
@@ -2916,7 +2916,7 @@ var areas = []Province{
 			{Code: "530828", Name: "澜沧拉祜族自治县", Type: "自治县"},
 			{Code: "530829", Name: "西盟佤族自治县", Type: "自治县"},
 		}},
-		{Code: "5309", Name: "临沧市", Type: "地级市", Cities: []City{
+		{Code: "5309", Name: "临沧市", Type: "地级市", Districts: []District{
 			{Code: "530902", Name: "临翔区", Type: "市辖区"},
 			{Code: "530921", Name: "凤庆县", Type: "县"},
 			{Code: "530922", Name: "云县", Type: "县"},
@@ -2926,7 +2926,7 @@ var areas = []Province{
 			{Code: "530926", Name: "耿马傣族佤族自治县", Type: "自治县"},
 			{Code: "530927", Name: "沧源佤族自治县", Type: "自治县"},
 		}},
-		{Code: "5323", Name: "楚雄彝族自治州", Type: "自治州", Cities: []City{
+		{Code: "5323", Name: "楚雄彝族自治州", Type: "自治州", Districts: []District{
 			{Code: "532301", Name: "楚雄市", Type: "县级市"},
 			{Code: "532302", Name: "禄丰市", Type: "县级市"},
 			{Code: "532322", Name: "双柏县", Type: "县"},
@@ -2938,7 +2938,7 @@ var areas = []Province{
 			{Code: "532328", Name: "元谋县", Type: "县"},
 			{Code: "532329", Name: "武定县", Type: "县"},
 		}},
-		{Code: "5325", Name: "红河哈尼族彝族自治州", Type: "自治州", Cities: []City{
+		{Code: "5325", Name: "红河哈尼族彝族自治州", Type: "自治州", Districts: []District{
 			{Code: "532501", Name: "个旧市", Type: "县级市"},
 			{Code: "532502", Name: "开远市", Type: "县级市"},
 			{Code: "532503", Name: "蒙自市", Type: "县级市"},
@@ -2953,7 +2953,7 @@ var areas = []Province{
 			{Code: "532531", Name: "绿春县", Type: "县"},
 			{Code: "532532", Name: "河口瑶族自治县", Type: "自治县"},
 		}},
-		{Code: "5326", Name: "文山壮族苗族自治州", Type: "自治州", Cities: []City{
+		{Code: "5326", Name: "文山壮族苗族自治州", Type: "自治州", Districts: []District{
 			{Code: "532601", Name: "文山市", Type: "县级市"},
 			{Code: "532622", Name: "砚山县", Type: "县"},
 			{Code: "532623", Name: "西畴县", Type: "县"},
@@ -2963,12 +2963,12 @@ var areas = []Province{
 			{Code: "532627", Name: "广南县", Type: "县"},
 			{Code: "532628", Name: "富宁县", Type: "县"},
 		}},
-		{Code: "5328", Name: "西双版纳傣族自治州", Type: "自治州", Cities: []City{
+		{Code: "5328", Name: "西双版纳傣族自治州", Type: "自治州", Districts: []District{
 			{Code: "532801", Name: "景洪市", Type: "县级市"},
 			{Code: "532822", Name: "勐海县", Type: "县"},
 			{Code: "532823", Name: "勐腊县", Type: "县"},
 		}},
-		{Code: "5329", Name: "大理白族自治州", Type: "自治州", Cities: []City{
+		{Code: "5329", Name: "大理白族自治州", Type: "自治州", Districts: []District{
 			{Code: "532901", Name: "大理市", Type: "县级市"},
 			{Code: "532922", Name: "漾濞彝族自治县", Type: "自治县"},
 			{Code: "532923", Name: "祥云县", Type: "县"},
@@ -2982,27 +2982,27 @@ var areas = []Province{
 			{Code: "532931", Name: "剑川县", Type: "县"},
 			{Code: "532932", Name: "鹤庆县", Type: "县"},
 		}},
-		{Code: "5331", Name: "德宏傣族景颇族自治州", Type: "自治州", Cities: []City{
+		{Code: "5331", Name: "德宏傣族景颇族自治州", Type: "自治州", Districts: []District{
 			{Code: "533102", Name: "瑞丽市", Type: "县级市"},
 			{Code: "533103", Name: "芒市", Type: "县级市"},
 			{Code: "533122", Name: "梁河县", Type: "县"},
 			{Code: "533123", Name: "盈江县", Type: "县"},
 			{Code: "533124", Name: "陇川县", Type: "县"},
 		}},
-		{Code: "5333", Name: "怒江傈僳族自治州", Type: "自治州", Cities: []City{
+		{Code: "5333", Name: "怒江傈僳族自治州", Type: "自治州", Districts: []District{
 			{Code: "533301", Name: "泸水市", Type: "县级市"},
 			{Code: "533323", Name: "福贡县", Type: "县"},
 			{Code: "533324", Name: "贡山独龙族怒族自治县", Type: "自治县"},
 			{Code: "533325", Name: "兰坪白族普米族自治县", Type: "自治县"},
 		}},
-		{Code: "5334", Name: "迪庆藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "5334", Name: "迪庆藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "533401", Name: "香格里拉市", Type: "县级市"},
 			{Code: "533422", Name: "德钦县", Type: "县"},
 			{Code: "533423", Name: "维西傈僳族自治县", Type: "自治县"},
 		}},
 	}},
 	{Code: "54", Name: "西藏自治区", Type: "自治区", Cities: []City{
-		{Code: "5401", Name: "拉萨市", Type: "地级市", Cities: []City{
+		{Code: "5401", Name: "拉萨市", Type: "地级市", Districts: []District{
 			{Code: "540102", Name: "城关区", Type: "市辖区"},
 			{Code: "540103", Name: "堆龙德庆区", Type: "市辖区"},
 			{Code: "540104", Name: "达孜区", Type: "市辖区"},
@@ -3012,7 +3012,7 @@ var areas = []Province{
 			{Code: "540124", Name: "曲水县", Type: "县"},
 			{Code: "540127", Name: "墨竹工卡县", Type: "县"},
 		}},
-		{Code: "5402", Name: "日喀则市", Type: "地级市", Cities: []City{
+		{Code: "5402", Name: "日喀则市", Type: "地级市", Districts: []District{
 			{Code: "540202", Name: "桑珠孜区", Type: "市辖区"},
 			{Code: "540221", Name: "南木林县", Type: "县"},
 			{Code: "540222", Name: "江孜县", Type: "县"},
@@ -3032,7 +3032,7 @@ var areas = []Province{
 			{Code: "540236", Name: "萨嘎县", Type: "县"},
 			{Code: "540237", Name: "岗巴县", Type: "县"},
 		}},
-		{Code: "5403", Name: "昌都市", Type: "地级市", Cities: []City{
+		{Code: "5403", Name: "昌都市", Type: "地级市", Districts: []District{
 			{Code: "540302", Name: "卡若区", Type: "市辖区"},
 			{Code: "540321", Name: "江达县", Type: "县"},
 			{Code: "540322", Name: "贡觉县", Type: "县"},
@@ -3045,7 +3045,7 @@ var areas = []Province{
 			{Code: "540329", Name: "洛隆县", Type: "县"},
 			{Code: "540330", Name: "边坝县", Type: "县"},
 		}},
-		{Code: "5404", Name: "林芝市", Type: "地级市", Cities: []City{
+		{Code: "5404", Name: "林芝市", Type: "地级市", Districts: []District{
 			{Code: "540402", Name: "巴宜区", Type: "市辖区"},
 			{Code: "540421", Name: "工布江达县", Type: "县"},
 			{Code: "540423", Name: "墨脱县", Type: "县"},
@@ -3054,7 +3054,7 @@ var areas = []Province{
 			{Code: "540426", Name: "朗县", Type: "县"},
 			{Code: "540481", Name: "米林市", Type: "县级市"},
 		}},
-		{Code: "5405", Name: "山南市", Type: "地级市", Cities: []City{
+		{Code: "5405", Name: "山南市", Type: "地级市", Districts: []District{
 			{Code: "540502", Name: "乃东区", Type: "市辖区"},
 			{Code: "540521", Name: "扎囊县", Type: "县"},
 			{Code: "540522", Name: "贡嘎县", Type: "县"},
@@ -3068,7 +3068,7 @@ var areas = []Province{
 			{Code: "540531", Name: "浪卡子县", Type: "县"},
 			{Code: "540581", Name: "错那市", Type: "县级市"},
 		}},
-		{Code: "5406", Name: "那曲市", Type: "地级市", Cities: []City{
+		{Code: "5406", Name: "那曲市", Type: "地级市", Districts: []District{
 			{Code: "540602", Name: "色尼区", Type: "市辖区"},
 			{Code: "540621", Name: "嘉黎县", Type: "县"},
 			{Code: "540622", Name: "比如县", Type: "县"},
@@ -3081,7 +3081,7 @@ var areas = []Province{
 			{Code: "540629", Name: "尼玛县", Type: "县"},
 			{Code: "540630", Name: "双湖县", Type: "县"},
 		}},
-		{Code: "5425", Name: "阿里地区", Type: "地区", Cities: []City{
+		{Code: "5425", Name: "阿里地区", Type: "地区", Districts: []District{
 			{Code: "542521", Name: "普兰县", Type: "县"},
 			{Code: "542522", Name: "札达县", Type: "县"},
 			{Code: "542523", Name: "噶尔县", Type: "县"},
@@ -3092,7 +3092,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "61", Name: "陕西省", Type: "省", Cities: []City{
-		{Code: "6101", Name: "西安市", Type: "地级市", Cities: []City{
+		{Code: "6101", Name: "西安市", Type: "地级市", Districts: []District{
 			{Code: "610102", Name: "新城区", Type: "市辖区"},
 			{Code: "610103", Name: "碑林区", Type: "市辖区"},
 			{Code: "610104", Name: "莲湖区", Type: "市辖区"},
@@ -3107,13 +3107,13 @@ var areas = []Province{
 			{Code: "610122", Name: "蓝田县", Type: "县"},
 			{Code: "610124", Name: "周至县", Type: "县"},
 		}},
-		{Code: "6102", Name: "铜川市", Type: "地级市", Cities: []City{
+		{Code: "6102", Name: "铜川市", Type: "地级市", Districts: []District{
 			{Code: "610202", Name: "王益区", Type: "市辖区"},
 			{Code: "610203", Name: "印台区", Type: "市辖区"},
 			{Code: "610204", Name: "耀州区", Type: "市辖区"},
 			{Code: "610222", Name: "宜君县", Type: "县"},
 		}},
-		{Code: "6103", Name: "宝鸡市", Type: "地级市", Cities: []City{
+		{Code: "6103", Name: "宝鸡市", Type: "地级市", Districts: []District{
 			{Code: "610302", Name: "渭滨区", Type: "市辖区"},
 			{Code: "610303", Name: "金台区", Type: "市辖区"},
 			{Code: "610304", Name: "陈仓区", Type: "市辖区"},
@@ -3127,7 +3127,7 @@ var areas = []Province{
 			{Code: "610330", Name: "凤县", Type: "县"},
 			{Code: "610331", Name: "太白县", Type: "县"},
 		}},
-		{Code: "6104", Name: "咸阳市", Type: "地级市", Cities: []City{
+		{Code: "6104", Name: "咸阳市", Type: "地级市", Districts: []District{
 			{Code: "610402", Name: "秦都区", Type: "市辖区"},
 			{Code: "610403", Name: "杨陵区", Type: "市辖区"},
 			{Code: "610404", Name: "渭城区", Type: "市辖区"},
@@ -3143,7 +3143,7 @@ var areas = []Province{
 			{Code: "610481", Name: "兴平市", Type: "县级市"},
 			{Code: "610482", Name: "彬州市", Type: "县级市"},
 		}},
-		{Code: "6105", Name: "渭南市", Type: "地级市", Cities: []City{
+		{Code: "6105", Name: "渭南市", Type: "地级市", Districts: []District{
 			{Code: "610502", Name: "临渭区", Type: "市辖区"},
 			{Code: "610503", Name: "华州区", Type: "市辖区"},
 			{Code: "610522", Name: "潼关县", Type: "县"},
@@ -3156,7 +3156,7 @@ var areas = []Province{
 			{Code: "610581", Name: "韩城市", Type: "县级市"},
 			{Code: "610582", Name: "华阴市", Type: "县级市"},
 		}},
-		{Code: "6106", Name: "延安市", Type: "地级市", Cities: []City{
+		{Code: "6106", Name: "延安市", Type: "地级市", Districts: []District{
 			{Code: "610602", Name: "宝塔区", Type: "市辖区"},
 			{Code: "610603", Name: "安塞区", Type: "市辖区"},
 			{Code: "610621", Name: "延长县", Type: "县"},
@@ -3171,7 +3171,7 @@ var areas = []Province{
 			{Code: "610632", Name: "黄陵县", Type: "县"},
 			{Code: "610681", Name: "子长市", Type: "县级市"},
 		}},
-		{Code: "6107", Name: "汉中市", Type: "地级市", Cities: []City{
+		{Code: "6107", Name: "汉中市", Type: "地级市", Districts: []District{
 			{Code: "610702", Name: "汉台区", Type: "市辖区"},
 			{Code: "610703", Name: "南郑区", Type: "市辖区"},
 			{Code: "610722", Name: "城固县", Type: "县"},
@@ -3184,7 +3184,7 @@ var areas = []Province{
 			{Code: "610729", Name: "留坝县", Type: "县"},
 			{Code: "610730", Name: "佛坪县", Type: "县"},
 		}},
-		{Code: "6108", Name: "榆林市", Type: "地级市", Cities: []City{
+		{Code: "6108", Name: "榆林市", Type: "地级市", Districts: []District{
 			{Code: "610802", Name: "榆阳区", Type: "市辖区"},
 			{Code: "610803", Name: "横山区", Type: "市辖区"},
 			{Code: "610822", Name: "府谷县", Type: "县"},
@@ -3198,7 +3198,7 @@ var areas = []Province{
 			{Code: "610831", Name: "子洲县", Type: "县"},
 			{Code: "610881", Name: "神木市", Type: "县级市"},
 		}},
-		{Code: "6109", Name: "安康市", Type: "地级市", Cities: []City{
+		{Code: "6109", Name: "安康市", Type: "地级市", Districts: []District{
 			{Code: "610902", Name: "汉滨区", Type: "市辖区"},
 			{Code: "610921", Name: "汉阴县", Type: "县"},
 			{Code: "610922", Name: "石泉县", Type: "县"},
@@ -3210,7 +3210,7 @@ var areas = []Province{
 			{Code: "610929", Name: "白河县", Type: "县"},
 			{Code: "610981", Name: "旬阳市", Type: "县级市"},
 		}},
-		{Code: "6110", Name: "商洛市", Type: "地级市", Cities: []City{
+		{Code: "6110", Name: "商洛市", Type: "地级市", Districts: []District{
 			{Code: "611002", Name: "商州区", Type: "市辖区"},
 			{Code: "611021", Name: "洛南县", Type: "县"},
 			{Code: "611022", Name: "丹凤县", Type: "县"},
@@ -3221,7 +3221,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "62", Name: "甘肃省", Type: "省", Cities: []City{
-		{Code: "6201", Name: "兰州市", Type: "地级市", Cities: []City{
+		{Code: "6201", Name: "兰州市", Type: "地级市", Districts: []District{
 			{Code: "620102", Name: "城关区", Type: "市辖区"},
 			{Code: "620103", Name: "七里河区", Type: "市辖区"},
 			{Code: "620104", Name: "西固区", Type: "市辖区"},
@@ -3232,18 +3232,18 @@ var areas = []Province{
 			{Code: "620123", Name: "榆中县", Type: "县"},
 		}},
 		{Code: "6202", Name: "嘉峪关市", Type: "地级市"},
-		{Code: "6203", Name: "金昌市", Type: "地级市", Cities: []City{
+		{Code: "6203", Name: "金昌市", Type: "地级市", Districts: []District{
 			{Code: "620302", Name: "金川区", Type: "市辖区"},
 			{Code: "620321", Name: "永昌县", Type: "县"},
 		}},
-		{Code: "6204", Name: "白银市", Type: "地级市", Cities: []City{
+		{Code: "6204", Name: "白银市", Type: "地级市", Districts: []District{
 			{Code: "620402", Name: "白银区", Type: "市辖区"},
 			{Code: "620403", Name: "平川区", Type: "市辖区"},
 			{Code: "620421", Name: "靖远县", Type: "县"},
 			{Code: "620422", Name: "会宁县", Type: "县"},
 			{Code: "620423", Name: "景泰县", Type: "县"},
 		}},
-		{Code: "6205", Name: "天水市", Type: "地级市", Cities: []City{
+		{Code: "6205", Name: "天水市", Type: "地级市", Districts: []District{
 			{Code: "620502", Name: "秦州区", Type: "市辖区"},
 			{Code: "620503", Name: "麦积区", Type: "市辖区"},
 			{Code: "620521", Name: "清水县", Type: "县"},
@@ -3252,13 +3252,13 @@ var areas = []Province{
 			{Code: "620524", Name: "武山县", Type: "县"},
 			{Code: "620525", Name: "张家川回族自治县", Type: "自治县"},
 		}},
-		{Code: "6206", Name: "武威市", Type: "地级市", Cities: []City{
+		{Code: "6206", Name: "武威市", Type: "地级市", Districts: []District{
 			{Code: "620602", Name: "凉州区", Type: "市辖区"},
 			{Code: "620621", Name: "民勤县", Type: "县"},
 			{Code: "620622", Name: "古浪县", Type: "县"},
 			{Code: "620623", Name: "天祝藏族自治县", Type: "自治县"},
 		}},
-		{Code: "6207", Name: "张掖市", Type: "地级市", Cities: []City{
+		{Code: "6207", Name: "张掖市", Type: "地级市", Districts: []District{
 			{Code: "620702", Name: "甘州区", Type: "市辖区"},
 			{Code: "620721", Name: "肃南裕固族自治县", Type: "自治县"},
 			{Code: "620722", Name: "民乐县", Type: "县"},
@@ -3266,7 +3266,7 @@ var areas = []Province{
 			{Code: "620724", Name: "高台县", Type: "县"},
 			{Code: "620725", Name: "山丹县", Type: "县"},
 		}},
-		{Code: "6208", Name: "平凉市", Type: "地级市", Cities: []City{
+		{Code: "6208", Name: "平凉市", Type: "地级市", Districts: []District{
 			{Code: "620802", Name: "崆峒区", Type: "市辖区"},
 			{Code: "620821", Name: "泾川县", Type: "县"},
 			{Code: "620822", Name: "灵台县", Type: "县"},
@@ -3275,7 +3275,7 @@ var areas = []Province{
 			{Code: "620826", Name: "静宁县", Type: "县"},
 			{Code: "620881", Name: "华亭市", Type: "县级市"},
 		}},
-		{Code: "6209", Name: "酒泉市", Type: "地级市", Cities: []City{
+		{Code: "6209", Name: "酒泉市", Type: "地级市", Districts: []District{
 			{Code: "620902", Name: "肃州区", Type: "市辖区"},
 			{Code: "620921", Name: "金塔县", Type: "县"},
 			{Code: "620922", Name: "瓜州县", Type: "县"},
@@ -3284,7 +3284,7 @@ var areas = []Province{
 			{Code: "620981", Name: "玉门市", Type: "县级市"},
 			{Code: "620982", Name: "敦煌市", Type: "县级市"},
 		}},
-		{Code: "6210", Name: "庆阳市", Type: "地级市", Cities: []City{
+		{Code: "6210", Name: "庆阳市", Type: "地级市", Districts: []District{
 			{Code: "621002", Name: "西峰区", Type: "市辖区"},
 			{Code: "621021", Name: "庆城县", Type: "县"},
 			{Code: "621022", Name: "环县", Type: "县"},
@@ -3294,7 +3294,7 @@ var areas = []Province{
 			{Code: "621026", Name: "宁县", Type: "县"},
 			{Code: "621027", Name: "镇原县", Type: "县"},
 		}},
-		{Code: "6211", Name: "定西市", Type: "地级市", Cities: []City{
+		{Code: "6211", Name: "定西市", Type: "地级市", Districts: []District{
 			{Code: "621102", Name: "安定区", Type: "市辖区"},
 			{Code: "621121", Name: "通渭县", Type: "县"},
 			{Code: "621122", Name: "陇西县", Type: "县"},
@@ -3303,7 +3303,7 @@ var areas = []Province{
 			{Code: "621125", Name: "漳县", Type: "县"},
 			{Code: "621126", Name: "岷县", Type: "县"},
 		}},
-		{Code: "6212", Name: "陇南市", Type: "地级市", Cities: []City{
+		{Code: "6212", Name: "陇南市", Type: "地级市", Districts: []District{
 			{Code: "621202", Name: "武都区", Type: "市辖区"},
 			{Code: "621221", Name: "成县", Type: "县"},
 			{Code: "621222", Name: "文县", Type: "县"},
@@ -3314,7 +3314,7 @@ var areas = []Province{
 			{Code: "621227", Name: "徽县", Type: "县"},
 			{Code: "621228", Name: "两当县", Type: "县"},
 		}},
-		{Code: "6229", Name: "临夏回族自治州", Type: "自治州", Cities: []City{
+		{Code: "6229", Name: "临夏回族自治州", Type: "自治州", Districts: []District{
 			{Code: "622901", Name: "临夏市", Type: "县级市"},
 			{Code: "622921", Name: "临夏县", Type: "县"},
 			{Code: "622922", Name: "康乐县", Type: "县"},
@@ -3324,7 +3324,7 @@ var areas = []Province{
 			{Code: "622926", Name: "东乡族自治县", Type: "自治县"},
 			{Code: "622927", Name: "积石山保安族东乡族撒拉族自治县", Type: "自治县"},
 		}},
-		{Code: "6230", Name: "甘南藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6230", Name: "甘南藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "623001", Name: "合作市", Type: "县级市"},
 			{Code: "623021", Name: "临潭县", Type: "县"},
 			{Code: "623022", Name: "卓尼县", Type: "县"},
@@ -3336,7 +3336,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "63", Name: "青海省", Type: "省", Cities: []City{
-		{Code: "6301", Name: "西宁市", Type: "地级市", Cities: []City{
+		{Code: "6301", Name: "西宁市", Type: "地级市", Districts: []District{
 			{Code: "630102", Name: "城东区", Type: "市辖区"},
 			{Code: "630103", Name: "城中区", Type: "市辖区"},
 			{Code: "630104", Name: "城西区", Type: "市辖区"},
@@ -3345,7 +3345,7 @@ var areas = []Province{
 			{Code: "630121", Name: "大通回族土族自治县", Type: "自治县"},
 			{Code: "630123", Name: "湟源县", Type: "县"},
 		}},
-		{Code: "6302", Name: "海东市", Type: "地级市", Cities: []City{
+		{Code: "6302", Name: "海东市", Type: "地级市", Districts: []District{
 			{Code: "630202", Name: "乐都区", Type: "市辖区"},
 			{Code: "630203", Name: "平安区", Type: "市辖区"},
 			{Code: "630222", Name: "民和回族土族自治县", Type: "自治县"},
@@ -3353,26 +3353,26 @@ var areas = []Province{
 			{Code: "630224", Name: "化隆回族自治县", Type: "自治县"},
 			{Code: "630225", Name: "循化撒拉族自治县", Type: "自治县"},
 		}},
-		{Code: "6322", Name: "海北藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6322", Name: "海北藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "632221", Name: "门源回族自治县", Type: "自治县"},
 			{Code: "632222", Name: "祁连县", Type: "县"},
 			{Code: "632223", Name: "海晏县", Type: "县"},
 			{Code: "632224", Name: "刚察县", Type: "县"},
 		}},
-		{Code: "6323", Name: "黄南藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6323", Name: "黄南藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "632301", Name: "同仁市", Type: "县级市"},
 			{Code: "632322", Name: "尖扎县", Type: "县"},
 			{Code: "632323", Name: "泽库县", Type: "县"},
 			{Code: "632324", Name: "河南蒙古族自治县", Type: "自治县"},
 		}},
-		{Code: "6325", Name: "海南藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6325", Name: "海南藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "632521", Name: "共和县", Type: "县"},
 			{Code: "632522", Name: "同德县", Type: "县"},
 			{Code: "632523", Name: "贵德县", Type: "县"},
 			{Code: "632524", Name: "兴海县", Type: "县"},
 			{Code: "632525", Name: "贵南县", Type: "县"},
 		}},
-		{Code: "6326", Name: "果洛藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6326", Name: "果洛藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "632621", Name: "玛沁县", Type: "县"},
 			{Code: "632622", Name: "班玛县", Type: "县"},
 			{Code: "632623", Name: "甘德县", Type: "县"},
@@ -3380,7 +3380,7 @@ var areas = []Province{
 			{Code: "632625", Name: "久治县", Type: "县"},
 			{Code: "632626", Name: "玛多县", Type: "县"},
 		}},
-		{Code: "6327", Name: "玉树藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6327", Name: "玉树藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "632701", Name: "玉树市", Type: "县级市"},
 			{Code: "632722", Name: "杂多县", Type: "县"},
 			{Code: "632723", Name: "称多县", Type: "县"},
@@ -3388,7 +3388,7 @@ var areas = []Province{
 			{Code: "632725", Name: "囊谦县", Type: "县"},
 			{Code: "632726", Name: "曲麻莱县", Type: "县"},
 		}},
-		{Code: "6328", Name: "海西蒙古族藏族自治州", Type: "自治州", Cities: []City{
+		{Code: "6328", Name: "海西蒙古族藏族自治州", Type: "自治州", Districts: []District{
 			{Code: "632801", Name: "格尔木市", Type: "县级市"},
 			{Code: "632802", Name: "德令哈市", Type: "县级市"},
 			{Code: "632803", Name: "茫崖市", Type: "县级市"},
@@ -3398,7 +3398,7 @@ var areas = []Province{
 		}},
 	}},
 	{Code: "64", Name: "宁夏回族自治区", Type: "自治区", Cities: []City{
-		{Code: "6401", Name: "银川市", Type: "地级市", Cities: []City{
+		{Code: "6401", Name: "银川市", Type: "地级市", Districts: []District{
 			{Code: "640104", Name: "兴庆区", Type: "市辖区"},
 			{Code: "640105", Name: "西夏区", Type: "市辖区"},
 			{Code: "640106", Name: "金凤区", Type: "市辖区"},
@@ -3406,33 +3406,33 @@ var areas = []Province{
 			{Code: "640122", Name: "贺兰县", Type: "县"},
 			{Code: "640181", Name: "灵武市", Type: "县级市"},
 		}},
-		{Code: "6402", Name: "石嘴山市", Type: "地级市", Cities: []City{
+		{Code: "6402", Name: "石嘴山市", Type: "地级市", Districts: []District{
 			{Code: "640202", Name: "大武口区", Type: "市辖区"},
 			{Code: "640205", Name: "惠农区", Type: "市辖区"},
 			{Code: "640221", Name: "平罗县", Type: "县"},
 		}},
-		{Code: "6403", Name: "吴忠市", Type: "地级市", Cities: []City{
+		{Code: "6403", Name: "吴忠市", Type: "地级市", Districts: []District{
 			{Code: "640302", Name: "利通区", Type: "市辖区"},
 			{Code: "640303", Name: "红寺堡区", Type: "市辖区"},
 			{Code: "640323", Name: "盐池县", Type: "县"},
 			{Code: "640324", Name: "同心县", Type: "县"},
 			{Code: "640381", Name: "青铜峡市", Type: "县级市"},
 		}},
-		{Code: "6404", Name: "固原市", Type: "地级市", Cities: []City{
+		{Code: "6404", Name: "固原市", Type: "地级市", Districts: []District{
 			{Code: "640402", Name: "原州区", Type: "市辖区"},
 			{Code: "640422", Name: "西吉县", Type: "县"},
 			{Code: "640423", Name: "隆德县", Type: "县"},
 			{Code: "640424", Name: "泾源县", Type: "县"},
 			{Code: "640425", Name: "彭阳县", Type: "县"},
 		}},
-		{Code: "6405", Name: "中卫市", Type: "地级市", Cities: []City{
+		{Code: "6405", Name: "中卫市", Type: "地级市", Districts: []District{
 			{Code: "640502", Name: "沙坡头区", Type: "市辖区"},
 			{Code: "640521", Name: "中宁县", Type: "县"},
 			{Code: "640522", Name: "海原县", Type: "县"},
 		}},
 	}},
 	{Code: "65", Name: "新疆维吾尔自治区", Type: "自治区", Cities: []City{
-		{Code: "6501", Name: "乌鲁木齐市", Type: "地级市", Cities: []City{
+		{Code: "6501", Name: "乌鲁木齐市", Type: "地级市", Districts: []District{
 			{Code: "650102", Name: "天山区", Type: "市辖区"},
 			{Code: "650103", Name: "沙依巴克区", Type: "市辖区"},
 			{Code: "650104", Name: "新市区", Type: "市辖区"},
@@ -3442,23 +3442,23 @@ var areas = []Province{
 			{Code: "650109", Name: "米东区", Type: "市辖区"},
 			{Code: "650121", Name: "乌鲁木齐县", Type: "县"},
 		}},
-		{Code: "6502", Name: "克拉玛依市", Type: "地级市", Cities: []City{
+		{Code: "6502", Name: "克拉玛依市", Type: "地级市", Districts: []District{
 			{Code: "650202", Name: "独山子区", Type: "市辖区"},
 			{Code: "650203", Name: "克拉玛依区", Type: "市辖区"},
 			{Code: "650204", Name: "白碱滩区", Type: "市辖区"},
 			{Code: "650205", Name: "乌尔禾区", Type: "市辖区"},
 		}},
-		{Code: "6504", Name: "吐鲁番市", Type: "地级市", Cities: []City{
+		{Code: "6504", Name: "吐鲁番市", Type: "地级市", Districts: []District{
 			{Code: "650402", Name: "高昌区", Type: "市辖区"},
 			{Code: "650421", Name: "鄯善县", Type: "县"},
 			{Code: "650422", Name: "托克逊县", Type: "县"},
 		}},
-		{Code: "6505", Name: "哈密市", Type: "地级市", Cities: []City{
+		{Code: "6505", Name: "哈密市", Type: "地级市", Districts: []District{
 			{Code: "650502", Name: "伊州区", Type: "市辖区"},
 			{Code: "650521", Name: "巴里坤哈萨克自治县", Type: "自治县"},
 			{Code: "650522", Name: "伊吾县", Type: "县"},
 		}},
-		{Code: "6523", Name: "昌吉回族自治州", Type: "自治州", Cities: []City{
+		{Code: "6523", Name: "昌吉回族自治州", Type: "自治州", Districts: []District{
 			{Code: "652301", Name: "昌吉市", Type: "县级市"},
 			{Code: "652302", Name: "阜康市", Type: "县级市"},
 			{Code: "652323", Name: "呼图壁县", Type: "县"},
@@ -3467,13 +3467,13 @@ var areas = []Province{
 			{Code: "652327", Name: "吉木萨尔县", Type: "县"},
 			{Code: "652328", Name: "木垒哈萨克自治县", Type: "自治县"},
 		}},
-		{Code: "6527", Name: "博尔塔拉蒙古自治州", Type: "自治州", Cities: []City{
+		{Code: "6527", Name: "博尔塔拉蒙古自治州", Type: "自治州", Districts: []District{
 			{Code: "652701", Name: "博乐市", Type: "县级市"},
 			{Code: "652702", Name: "阿拉山口市", Type: "县级市"},
 			{Code: "652722", Name: "精河县", Type: "县"},
 			{Code: "652723", Name: "温泉县", Type: "县"},
 		}},
-		{Code: "6528", Name: "巴音郭楞蒙古自治州", Type: "自治州", Cities: []City{
+		{Code: "6528", Name: "巴音郭楞蒙古自治州", Type: "自治州", Districts: []District{
 			{Code: "652801", Name: "库尔勒市", Type: "县级市"},
 			{Code: "652822", Name: "轮台县", Type: "县"},
 			{Code: "652823", Name: "尉犁县", Type: "县"},
@@ -3484,7 +3484,7 @@ var areas = []Province{
 			{Code: "652828", Name: "和硕县", Type: "县"},
 			{Code: "652829", Name: "博湖县", Type: "县"},
 		}},
-		{Code: "6529", Name: "阿克苏地区", Type: "地区", Cities: []City{
+		{Code: "6529", Name: "阿克苏地区", Type: "地区", Districts: []District{
 			{Code: "652901", Name: "阿克苏市", Type: "县级市"},
 			{Code: "652902", Name: "库车市", Type: "县级市"},
 			{Code: "652922", Name: "温宿县", Type: "县"},
@@ -3495,13 +3495,13 @@ var areas = []Province{
 			{Code: "652928", Name: "阿瓦提县", Type: "县"},
 			{Code: "652929", Name: "柯坪县", Type: "县"},
 		}},
-		{Code: "6530", Name: "克孜勒苏柯尔克孜自治州", Type: "自治州", Cities: []City{
+		{Code: "6530", Name: "克孜勒苏柯尔克孜自治州", Type: "自治州", Districts: []District{
 			{Code: "653001", Name: "阿图什市", Type: "县级市"},
 			{Code: "653022", Name: "阿克陶县", Type: "县"},
 			{Code: "653023", Name: "阿合奇县", Type: "县"},
 			{Code: "653024", Name: "乌恰县", Type: "县"},
 		}},
-		{Code: "6531", Name: "喀什地区", Type: "地区", Cities: []City{
+		{Code: "6531", Name: "喀什地区", Type: "地区", Districts: []District{
 			{Code: "653101", Name: "喀什市", Type: "县级市"},
 			{Code: "653121", Name: "疏附县", Type: "县"},
 			{Code: "653122", Name: "疏勒县", Type: "县"},
@@ -3515,7 +3515,7 @@ var areas = []Province{
 			{Code: "653130", Name: "巴楚县", Type: "县"},
 			{Code: "653131", Name: "塔什库尔干塔吉克自治县", Type: "自治县"},
 		}},
-		{Code: "6532", Name: "和田地区", Type: "地区", Cities: []City{
+		{Code: "6532", Name: "和田地区", Type: "地区", Districts: []District{
 			{Code: "653201", Name: "和田市", Type: "县级市"},
 			{Code: "653221", Name: "和田县", Type: "县"},
 			{Code: "653222", Name: "墨玉县", Type: "县"},
@@ -3527,7 +3527,7 @@ var areas = []Province{
 			{Code: "653228", Name: "和康县", Type: "县"},
 			{Code: "653229", Name: "和安县", Type: "县"},
 		}},
-		{Code: "6540", Name: "伊犁哈萨克自治州", Type: "自治州", Cities: []City{
+		{Code: "6540", Name: "伊犁哈萨克自治州", Type: "自治州", Districts: []District{
 			{Code: "654002", Name: "伊宁市", Type: "县级市"},
 			{Code: "654003", Name: "奎屯市", Type: "县级市"},
 			{Code: "654004", Name: "霍尔果斯市", Type: "县级市"},
@@ -3540,7 +3540,7 @@ var areas = []Province{
 			{Code: "654027", Name: "特克斯县", Type: "县"},
 			{Code: "654028", Name: "尼勒克县", Type: "县"},
 		}},
-		{Code: "6542", Name: "塔城地区", Type: "地区", Cities: []City{
+		{Code: "6542", Name: "塔城地区", Type: "地区", Districts: []District{
 			{Code: "654201", Name: "塔城市", Type: "县级市"},
 			{Code: "654202", Name: "乌苏市", Type: "县级市"},
 			{Code: "654203", Name: "沙湾市", Type: "县级市"},
@@ -3549,7 +3549,7 @@ var areas = []Province{
 			{Code: "654225", Name: "裕民县", Type: "县"},
 			{Code: "654226", Name: "和布克赛尔蒙古自治县", Type: "自治县"},
 		}},
-		{Code: "6543", Name: "阿勒泰地区", Type: "地区", Cities: []City{
+		{Code: "6543", Name: "阿勒泰地区", Type: "地区", Districts: []District{
 			{Code: "654301", Name: "阿勒泰市", Type: "县级市"},
 			{Code: "654321", Name: "布尔津县", Type: "县"},
 			{Code: "654322", Name: "富蕴县", Type: "县"},

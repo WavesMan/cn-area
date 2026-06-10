@@ -81,14 +81,16 @@ def gen_python(data: list[dict]) -> str:
 
 # ── Go ──────────────────────────────────────────────────────────────────────
 
-def _go_node(node: dict, indent: int) -> str:
+def _go_node(node: dict, indent: int, is_city: bool = False) -> str:
     pad = "\t" * indent
     parts = [f'Code: "{node["code"]}"', f'Name: "{node["name"]}"', f'Type: "{node["type"]}"']
     children = node.get("children")
     if children:
-        child_strs = [_go_node(c, indent + 1) for c in children]
+        field = "Districts" if is_city else "Cities"
+        type_name = "District" if is_city else "City"
+        child_strs = [_go_node(c, indent + 1, is_city=True) for c in children]
         inner = "\n".join(child_strs)
-        parts.append('Cities: []City{\n' + inner + "\n" + pad + "}")
+        parts.append(f'{field}: []{type_name}{{\n' + inner + "\n" + pad + "}")
     return pad + "{" + ", ".join(parts) + "},"
 
 
