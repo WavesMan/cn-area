@@ -8,7 +8,7 @@ check:
 
 test: build
 	cd packages/typescript && npm test
-	cd packages/python && uv run --with pytest pytest tests/ -v
+	cd packages/python && uv sync && uv run pytest tests/ -v
 	cd packages/go && go test ./... -v
 
 build:

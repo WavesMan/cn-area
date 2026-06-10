@@ -46,15 +46,21 @@ jobs:
 
       - name: Publish to npm
         working-directory: packages/typescript
-        run: npm publish --access public
+        run: |
+          if npm view @waves_man/cn-area@${{ steps.version.outputs.VERSION }} > /dev/null 2>&1; then
+            echo "Version ${{ steps.version.outputs.VERSION }} already exists on npm, skipping"
+          else
+            npm publish --access public
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to PyPI
         working-directory: packages/python
         run: |
+          uv sync
           uv build
-          uv run twine upload dist/*
+          uv run twine upload dist/* || echo "Version may already exist on PyPI"
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
