@@ -12,6 +12,6 @@ test: build
 	cd packages/go && go test ./... -v
 
 build:
-	cd packages/typescript && npm run build
+	cd packages/typescript && npm install && npm run build
 	cd packages/python && uv build
 	cd packages/go && go build ./...
