@@ -1,4 +1,4 @@
-.PHONY: generate check test build
+.PHONY: generate check test build version-sync
 
 generate:
 	uv run scripts/generate.py
@@ -15,3 +15,6 @@ build:
 	cd packages/typescript && npm install && npm run build
 	cd packages/python && uv build
 	cd packages/go && go build ./...
+
+version-sync:
+	uv run scripts/set-version.py

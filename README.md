@@ -8,7 +8,7 @@
 
 ```bash
 # TypeScript
-npm install cn-area
+npm install @waveman/cn-area
 
 # Python
 pip install cn-area
@@ -22,7 +22,7 @@ go get github.com/WavesMan/cn-area/go
 ### TypeScript
 
 ```ts
-import { provinces, cities, districts, lookup, flatten, search } from 'cn-area'
+import { provinces, cities, districts, lookup, flatten, search } from '@waveman/cn-area'
 
 provinces()        // 34 个省级行政区
 cities('15')       // 内蒙古各地级市
