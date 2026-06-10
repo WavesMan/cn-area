@@ -1,0 +1,25 @@
+{
+  "name": "cn-area",
+  "version": "1.0.0",
+  "description": "中国行政区划数据包（TypeScript）",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/index.test.js"
+  },
+  "keywords": [
+    "china",
+    "administrative",
+    "area",
+    "region"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "typescript": "^6.0.3"
+  }
+}
