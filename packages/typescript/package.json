@@ -1,5 +1,5 @@
 {
-  "name": "@waveman/cn-area",
+  "name": "@waves_man/cn-area",
   "version": "1.0.3",
   "description": "中国行政区划数据包（TypeScript）",
   "main": "dist/index.js",
